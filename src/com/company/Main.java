@@ -17,7 +17,7 @@ public class Main {
         capacitate.add(46);
         Frigider f=new Frigider(2.3f,"Hsf sfs23","Valabil","Arctic","⭐⭐⭐⭐⭐","In perete","Amoled","A+++","Fara","Fara",functii,capacitate);
         System.out.println(f);
-
+        //testare vcs nicu
 
     }
   }
