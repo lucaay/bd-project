@@ -79,7 +79,7 @@ public class Frigider extends Electrocasnice {
     public String toString(){
 
         return " Pret: "+ pret+"\n Model: "+model+"\n Disponibilitate: "+disponibilitate+"\n Brand: "+brand+"\n Rating: "+rating+
-                "\n Tip Încasare: "+tip_incastrare+"\n Tip Display: "+tip_display+"\n Clasa Energetica: "+clasa_energetica+
+                "\n Tip Încastrare: "+tip_incastrare+"\n Tip Display: "+tip_display+"\n Clasa Energetica: "+clasa_energetica+
                 "\n Sistem Dezghetare: "+sistem_dezghetare+"\n Sistem racire: "+sistem_racire+"\n Functii"+functii+
                 "\n Capacitate: "+capacitate;
     }
