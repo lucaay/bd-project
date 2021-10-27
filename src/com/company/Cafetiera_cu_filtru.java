@@ -52,7 +52,7 @@ public class Cafetiera_cu_filtru extends Electrocasnice {
     }
     public String toString(){
 
-        return " Pret: "+pret+"\n Model: "+model+"\n Brand: "+brand+"\n Rating: "+rating+
+        return super.toString()+"\n Pret: "+pret+"\n Model: "+model+"\n Brand: "+brand+"\n Rating: "+rating+
         "\n Culoare: "+culoare+"\n Tip cafea(Macinata/boabe/capsule)"+tip_cafea+"\n Capacitate: "+ capacitate;
     }
 }
