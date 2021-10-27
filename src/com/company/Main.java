@@ -18,25 +18,25 @@ public class Main {
         Frigider f=new Frigider(2.3f,"Hsf sfs23","Valabil","Arctic","⭐⭐⭐⭐⭐","In perete","Amoled","A+++","Fara","Fara",functii,capacitate);
         System.out.println(f+"\n");
 
-      Lada_Frigorifica lf = new Lada_Frigorifica();
+      LadaFrigorifica lf = new LadaFrigorifica();
         System.out.println(lf+"\n");
 
-      Cafetiera_cu_filtru n=new Cafetiera_cu_filtru();
+      CafetieraFiltru n=new CafetieraFiltru();
         System.out.println(n+"\n");
 
       Espressor es=new Espressor();
         System.out.println(es + "\n");
 
-      Cuptoare_Electrice cup=new Cuptoare_Electrice();
+      CuptoareElectrice cup=new CuptoareElectrice();
         System.out.println(cup + "\n");
 
-      Cuptoare_Microunde cupm= new Cuptoare_Microunde();
+      CuptoareMicrounde cupm= new CuptoareMicrounde();
         System.out.println(cupm + "\n");
 
-      Masina_de_Spalat_Rufe ms= new Masina_de_Spalat_Rufe();
+      MasinaSpalatRufe ms= new MasinaSpalatRufe();
         System.out.println(ms + "\n");
 
-      Masina_de_Spalat_Vase msv = new Masina_de_Spalat_Vase();
+      MasinaSpalatVase msv = new MasinaSpalatVase();
         System.out.println(msv + "\n");
     }
   }

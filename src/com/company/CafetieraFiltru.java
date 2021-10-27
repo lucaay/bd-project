@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Vector;
 
-public class Cafetiera_cu_filtru extends Electrocasnice {
+public class CafetieraFiltru extends Electrocasnice {
     /////date membre
     private float pret;
     private String model;
@@ -12,7 +12,7 @@ public class Cafetiera_cu_filtru extends Electrocasnice {
     private String tip_cafea;
     private Vector<Integer> capacitate;
     /////metode
-    Cafetiera_cu_filtru(){
+    CafetieraFiltru(){
         pret=0;
         model="Necunoscut";
         brand="Necunoscut";
@@ -25,7 +25,7 @@ public class Cafetiera_cu_filtru extends Electrocasnice {
             capacitate.add(i,0);
     }
 
-    Cafetiera_cu_filtru(float pret,String model, String brand, String rating,String culoare,String tip_cafea, Vector<Integer> capacitate){
+    CafetieraFiltru(float pret,String model, String brand, String rating,String culoare,String tip_cafea, Vector<Integer> capacitate){
         this.pret=pret;
         this.model=model;
         this.brand=brand;
@@ -38,7 +38,7 @@ public class Cafetiera_cu_filtru extends Electrocasnice {
         }
     }
 
-    public Cafetiera_cu_filtru(Cafetiera_cu_filtru l){
+    public CafetieraFiltru(CafetieraFiltru l){
         this.pret=l.pret;
         this.model=l.model;
         this.brand=l.brand;

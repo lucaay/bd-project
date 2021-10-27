@@ -1,10 +1,10 @@
-package com.company;
+package com.company;//calea 
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-public class Masina_de_Spalat_Vase extends Electrocasnice {
+public class MasinaSpalatRufe extends Electrocasnice {
     private float pret;
     private String model;
     private String disponibilitate;
@@ -17,7 +17,8 @@ public class Masina_de_Spalat_Vase extends Electrocasnice {
     private List<String> functii;
     private Vector<Integer> capacitate;
 
-    Masina_de_Spalat_Vase() {
+    ///// metode
+    MasinaSpalatRufe() {
         pret = 0;
         model = "Necunoscut";
         disponibilitate = "Necunoscut";
@@ -35,7 +36,7 @@ public class Masina_de_Spalat_Vase extends Electrocasnice {
             capacitate.add(i, 0);
     }
 
-    Masina_de_Spalat_Vase(float pret, String model, String disponibilitate, String brand, String rating,
+    MasinaSpalatRufe(float pret, String model, String disponibilitate, String brand, String rating,
             String tip_incastrare, String tip_display, String clasa_energetica, int nrPrograme, List<String> functii,
             Vector<Integer> capacitate) {
         this.pret = pret;
@@ -54,24 +55,24 @@ public class Masina_de_Spalat_Vase extends Electrocasnice {
         }
     }
 
-    public Masina_de_Spalat_Vase(Masina_de_Spalat_Vase v) {
-        this.pret = v.pret;
-        this.model = v.model;
-        this.disponibilitate = v.disponibilitate;
-        this.brand = v.brand;
-        this.rating = v.rating;
-        this.tip_incastrare = v.tip_incastrare;
-        this.tip_display = v.tip_display;
-        this.clasa_energetica = v.clasa_energetica;
-        this.nrPrograme = v.nrPrograme;
-        this.functii = v.functii;
+    public MasinaSpalatRufe(MasinaSpalatRufe a) {
+        this.pret = a.pret;
+        this.model = a.model;
+        this.disponibilitate = a.disponibilitate;
+        this.brand = a.brand;
+        this.rating = a.rating;
+        this.tip_incastrare = a.tip_incastrare;
+        this.tip_display = a.tip_display;
+        this.clasa_energetica = a.clasa_energetica;
+        this.nrPrograme = a.nrPrograme;
+        this.functii = a.functii;
         this.capacitate = new Vector<Integer>();
-        for (int i = 0; i < v.capacitate.capacity(); i++) {
-            this.capacitate.add(i, v.capacitate.get(i));
+        for (int i = 0; i < a.capacitate.capacity(); i++) {
+            this.capacitate.add(i, a.capacitate.get(i));
 
         }
     }
-
+//override
     public String toString() {
 
         return " Pret: " + pret + "\n Model: " + model + "\n Disponibilitate: " + disponibilitate + "\n Brand: " + brand

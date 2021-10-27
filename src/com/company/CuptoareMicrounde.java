@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-public class Cuptoare_Microunde extends Electrocasnice {
+public class CuptoareMicrounde extends Electrocasnice {
       /////date membre
       private float pret;
       private String disponibilitate;
@@ -18,7 +18,7 @@ public class Cuptoare_Microunde extends Electrocasnice {
       private Vector<Integer> capacitate;
   
       /////metode
-      Cuptoare_Microunde() {
+      CuptoareMicrounde() {
           pret = 0;
           disponibilitate = "Necunoscut";
           brand = "Necunoscut";
@@ -34,7 +34,7 @@ public class Cuptoare_Microunde extends Electrocasnice {
               capacitate.add(i, 0);
       }
   
-      Cuptoare_Microunde(float pret,  String disponibilitate, String brand, String rating, String tip_incastrare,
+      CuptoareMicrounde(float pret,  String disponibilitate, String brand, String rating, String tip_incastrare,
                String tip_panoucomanda, String tip_modalitatigatire, String tip_culoare,
                List<String> functii, Vector<Integer> capacitate) {
           this.pret = pret;
@@ -51,7 +51,7 @@ public class Cuptoare_Microunde extends Electrocasnice {
           }
       }
   
-      public Cuptoare_Microunde(Cuptoare_Microunde f) {
+      public CuptoareMicrounde(CuptoareMicrounde f) {
           this.pret = f.pret;
           this.disponibilitate = f.disponibilitate;
           this.brand = f.brand;

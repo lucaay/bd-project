@@ -2,7 +2,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Vector;
 import java.util.List;
-public class Lada_Frigorifica extends Electrocasnice {
+public class LadaFrigorifica extends Electrocasnice {
     /////date membre
     private float pret;
     private String model;
@@ -13,7 +13,7 @@ public class Lada_Frigorifica extends Electrocasnice {
     private List<String> functii;
     private Vector<Integer> capacitate;
     /////metode
-    Lada_Frigorifica(){
+    LadaFrigorifica(){
         pret=0;
         model="Necunoscut";
         disponibilitate="Necunoscut";
@@ -28,7 +28,7 @@ public class Lada_Frigorifica extends Electrocasnice {
             capacitate.add(i,0);
     }
 
-    Lada_Frigorifica(float pret,String model, String disponibilitate, String brand, String rating, String tip_incastrare,
+    LadaFrigorifica(float pret,String model, String disponibilitate, String brand, String rating, String tip_incastrare,
              String tip_display, String clasa_energetica, String sistem_dezghetare, String sistem_racire,
              List<String> functii,Vector<Integer> capacitate){
         this.pret=pret;
@@ -44,7 +44,7 @@ public class Lada_Frigorifica extends Electrocasnice {
         }
     }
 
-    public Lada_Frigorifica(Lada_Frigorifica l){
+    public LadaFrigorifica(LadaFrigorifica l){
         this.pret=l.pret;
         this.model=l.model;
         this.disponibilitate=l.disponibilitate;

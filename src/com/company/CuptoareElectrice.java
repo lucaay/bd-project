@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-public class Cuptoare_Electrice extends Electrocasnice {
+public class CuptoareElectrice extends Electrocasnice {
     /////date membre
     private float pret;
     private String disponibilitate;
@@ -17,7 +17,7 @@ public class Cuptoare_Electrice extends Electrocasnice {
     private Vector<Integer> putere;
     private Vector<Integer> temperatura_maxima;
     /////metode
-    Cuptoare_Electrice() {
+    CuptoareElectrice() {
         pret = 0;
         disponibilitate = "Necunoscut";
         brand = "Necunoscut";
@@ -41,7 +41,7 @@ public class Cuptoare_Electrice extends Electrocasnice {
             temperatura_maxima.add(i, 0);
     }
 
-    Cuptoare_Electrice(float pret,  String disponibilitate, String brand, String rating, String tip_incastrare,
+    CuptoareElectrice(float pret,  String disponibilitate, String brand, String rating, String tip_incastrare,
              String tip_produs, String tip_culoare,
              List<String> functii, Vector<Integer> capacitate, Vector<Integer> putere, Vector<Integer> temperatura_maxima) {
         this.pret = pret;
@@ -65,7 +65,7 @@ public class Cuptoare_Electrice extends Electrocasnice {
         }
     }
 
-    public Cuptoare_Electrice(Cuptoare_Electrice f) {
+    public CuptoareElectrice(CuptoareElectrice f) {
         this.pret = f.pret;
         this.disponibilitate = f.disponibilitate;
         this.brand = f.brand;
