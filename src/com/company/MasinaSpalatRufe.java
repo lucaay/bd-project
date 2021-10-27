@@ -2,6 +2,7 @@ package com.company;//calea
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 
 public class MasinaSpalatRufe extends Electrocasnice {
@@ -15,7 +16,7 @@ public class MasinaSpalatRufe extends Electrocasnice {
 
     ///// metode
     MasinaSpalatRufe() {
-       
+        super();
         tip_incastrare = "Necunoscut";
         tip_display = "Necunoscut";
         clasa_energetica = "Necunoscut";
@@ -25,8 +26,8 @@ public class MasinaSpalatRufe extends Electrocasnice {
     
     }
 
-    MasinaSpalatRufe(String tip_incastrare, String tip_display, String clasa_energetica, int nrPrograme, List<String> functii) {
-       
+    MasinaSpalatRufe(String tip_electrocasnice,float pret,Boolean disponibilitate,String model,String brand,String rating,Vector<Integer>capacitate,String tip_incastrare, String tip_display, String clasa_energetica, int nrPrograme, List<String> functii) {
+        super(tip_electrocasnice,pret,disponibilitate,model,brand,rating,capacitate);
         this.tip_incastrare = tip_incastrare;
         this.tip_display = tip_display;
         this.clasa_energetica = clasa_energetica;
@@ -35,8 +36,8 @@ public class MasinaSpalatRufe extends Electrocasnice {
   
     }
 
-    public MasinaSpalatRufe(MasinaSpalatRufe a) {
- 
+    public MasinaSpalatRufe(MasinaSpalatRufe a,Electrocasnice e) {
+        super(e);
         this.tip_incastrare = a.tip_incastrare;
         this.tip_display = a.tip_display;
         this.clasa_energetica = a.clasa_energetica;

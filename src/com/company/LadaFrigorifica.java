@@ -2,28 +2,30 @@ package com.company;
 import java.util.ArrayList;
 
 import java.util.List;
+import java.util.Vector;
 public class LadaFrigorifica extends Electrocasnice {
     /////date membre
     private String clasa_energetica;
     private List<String> functii;
     /////metode
     LadaFrigorifica(){
-  
+        super();
         clasa_energetica="Necunoscut";
         functii=new ArrayList<String>();
         functii.add("Necunoscut");
      
     }
 
-    LadaFrigorifica(String tip_incastrare,String tip_display, String clasa_energetica, String sistem_dezghetare,
+    LadaFrigorifica(String tip_electrocasnice,float pret,Boolean disponibilitate,String model,String brand,String rating,Vector<Integer>capacitate,String tip_incastrare,String tip_display, String clasa_energetica, String sistem_dezghetare,
      String sistem_racire,List<String> functii){
-     
+        super(tip_electrocasnice,pret,disponibilitate,model,brand,rating,capacitate);
         this.clasa_energetica=clasa_energetica;
         this.functii=functii;
     
     }
 
-    public LadaFrigorifica(LadaFrigorifica l){
+    public LadaFrigorifica(LadaFrigorifica l,Electrocasnice e){
+        super(e);
         this.clasa_energetica=l.clasa_energetica;
         this.functii=l.functii;
   

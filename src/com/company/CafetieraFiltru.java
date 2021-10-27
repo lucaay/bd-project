@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Vector;
+
 public class CafetieraFiltru extends Electrocasnice {
     /////date membre
     
@@ -14,8 +16,8 @@ public class CafetieraFiltru extends Electrocasnice {
         
     }
 
-    CafetieraFiltru(String culoare,String tip_cafea){
-     
+    CafetieraFiltru(String tip_electrocasnice,float pret,Boolean disponibilitate,String model,String brand,String rating,Vector<Integer>capacitate,String culoare,String tip_cafea){
+        super(tip_electrocasnice,pret,disponibilitate,model,brand,rating,capacitate);
         this.culoare=culoare;
         this.tip_cafea=tip_cafea;
         

@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 
 public class CuptoareMicrounde extends Electrocasnice {
@@ -14,7 +15,7 @@ public class CuptoareMicrounde extends Electrocasnice {
   
       /////metode
       CuptoareMicrounde() {
-         
+          super();
           tip_incastrare = "Necunoscut";
           tip_panoucomanda = "Necunoscut";
           tip_culoare = "Necunoscut";
@@ -24,9 +25,9 @@ public class CuptoareMicrounde extends Electrocasnice {
     
       }
   
-      CuptoareMicrounde(String tip_incastrare,String tip_panoucomanda, String tip_modalitatigatire, String tip_culoare,
+      CuptoareMicrounde(String tip_electrocasnice,float pret,Boolean disponibilitate,String model,String brand,String rating,Vector<Integer>capacitate,String tip_incastrare,String tip_panoucomanda, String tip_modalitatigatire, String tip_culoare,
                List<String> functii) {
-
+          super(tip_electrocasnice,pret,disponibilitate,model,brand,rating,capacitate);
           this.tip_incastrare = tip_incastrare;
           this.tip_panoucomanda=tip_panoucomanda;
           this.tip_modalitatigatire=tip_modalitatigatire;
@@ -34,8 +35,8 @@ public class CuptoareMicrounde extends Electrocasnice {
 
       }
   
-      public CuptoareMicrounde(CuptoareMicrounde f) {
-
+      public CuptoareMicrounde(CuptoareMicrounde f,Electrocasnice e) {
+          super(e);
           this.tip_incastrare = f.tip_incastrare;
           this.tip_panoucomanda = f.tip_panoucomanda;
           this.tip_modalitatigatire = f.tip_modalitatigatire;

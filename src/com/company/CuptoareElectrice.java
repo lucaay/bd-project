@@ -1,6 +1,7 @@
 package com.company;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class CuptoareElectrice extends Electrocasnice {
     /////date membre
@@ -13,7 +14,7 @@ public class CuptoareElectrice extends Electrocasnice {
     private float temperatura_maxima;
     /////metode
     CuptoareElectrice() {
-        
+        super();
         tip_incastrare = "Necunoscut";
         tip_produs = "Necunoscut";
         tip_culoare = "Necunoscut";
@@ -24,8 +25,9 @@ public class CuptoareElectrice extends Electrocasnice {
     
     }
 
-    CuptoareElectrice(String tip_incastrare,String tip_produs, String tip_culoare,List<String> functii, float putere,
+    CuptoareElectrice(String tip_electrocasnice,float pret,Boolean disponibilitate,String model,String brand,String rating,Vector<Integer>capacitate,String tip_incastrare,String tip_produs, String tip_culoare,List<String> functii, float putere,
      float temperatura_maxima) {
+        super(tip_electrocasnice,pret,disponibilitate,model,brand,rating,capacitate);
         this.tip_incastrare = tip_incastrare;
         this.tip_produs=tip_produs;
         this.tip_culoare = tip_culoare;

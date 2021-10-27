@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 
 public class MasinaSpalatVase extends Electrocasnice {
@@ -14,7 +15,7 @@ public class MasinaSpalatVase extends Electrocasnice {
  
 
     MasinaSpalatVase() {
-    
+        super();
         tip_incastrare = "Necunoscut";
         tip_display = "Necunoscut";
         clasa_energetica = "Necunoscut";
@@ -24,8 +25,8 @@ public class MasinaSpalatVase extends Electrocasnice {
   
     }
 
-    MasinaSpalatVase(String tip_incastrare, String tip_display, String clasa_energetica, int nrPrograme, List<String> functii) {
-        
+    MasinaSpalatVase(String tip_electrocasnice,float pret,Boolean disponibilitate,String model,String brand,String rating,Vector<Integer>capacitate,String tip_incastrare, String tip_display, String clasa_energetica, int nrPrograme, List<String> functii) {
+        super(tip_electrocasnice,pret,disponibilitate,model,brand,rating,capacitate);
         this.tip_incastrare = tip_incastrare;
         this.tip_display = tip_display;
         this.clasa_energetica = clasa_energetica;
@@ -34,8 +35,8 @@ public class MasinaSpalatVase extends Electrocasnice {
       
     }
 
-    public MasinaSpalatVase(MasinaSpalatVase v) {
-       
+    public MasinaSpalatVase(MasinaSpalatVase v,Electrocasnice e) {
+        super(e);
         this.tip_incastrare = v.tip_incastrare;
         this.tip_display = v.tip_display;
         this.clasa_energetica = v.clasa_energetica;

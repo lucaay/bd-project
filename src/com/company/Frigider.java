@@ -1,7 +1,7 @@
 package com.company;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Vector;
 public class Frigider extends Electrocasnice {
     /////date membre
  
@@ -15,7 +15,7 @@ public class Frigider extends Electrocasnice {
 
     /////metode
     Frigider() {
-        
+        super();
         tip_incastrare = "Necunoscut";
         tip_display = "Necunoscut";
         clasa_energetica = "Necunoscut";
@@ -27,9 +27,9 @@ public class Frigider extends Electrocasnice {
    
     }
 
-    Frigider(String tip_incastrare,String tip_display, String clasa_energetica, String sistem_dezghetare, String sistem_racire,
+    Frigider(String tip_electrocasnice,float pret,Boolean disponibilitate,String model,String brand,String rating,Vector<Integer>capacitate,String tip_incastrare,String tip_display, String clasa_energetica, String sistem_dezghetare, String sistem_racire,
              List<String> functii) {
-        
+        super(tip_electrocasnice,pret,disponibilitate,model,brand,rating,capacitate);
         this.tip_incastrare = tip_incastrare;
         this.tip_display = tip_display;
         this.clasa_energetica = clasa_energetica;
@@ -39,8 +39,8 @@ public class Frigider extends Electrocasnice {
   
     }
 
-    public Frigider(Frigider f) {
-       
+    public Frigider(Frigider f,Electrocasnice e) {
+        super(e);
         this.tip_incastrare = f.tip_incastrare;
         this.tip_display = f.tip_display;
         this.clasa_energetica = f.clasa_energetica;
