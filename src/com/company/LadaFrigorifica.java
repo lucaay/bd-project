@@ -24,10 +24,16 @@ public class LadaFrigorifica extends Electrocasnice {
     
     }
 
-    public LadaFrigorifica(LadaFrigorifica l,Electrocasnice e){
-        super(e);
-        this.clasa_energetica=l.clasa_energetica;
-        this.functii=l.functii;
+    public LadaFrigorifica(LadaFrigorifica f){
+        super.setBrand(f.getBrand());
+        super.setModel(f.getModel());
+        super.setPret(f.getPret());
+        super.setCapacitate(f.getCapacitate());
+        super.setDisponibilitate(f.getDisponibilitate());
+        super.setTip_electrocasnice(f.getTip_electrocasnice());
+        super.setRating(f.getRating());
+        this.clasa_energetica=f.clasa_energetica;
+        this.functii=f.functii;
   
     }
     public String toString(){

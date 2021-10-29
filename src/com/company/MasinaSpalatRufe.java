@@ -36,13 +36,19 @@ public class MasinaSpalatRufe extends Electrocasnice {
   
     }
 
-    public MasinaSpalatRufe(MasinaSpalatRufe a,Electrocasnice e) {
-        super(e);
-        this.tip_incastrare = a.tip_incastrare;
-        this.tip_display = a.tip_display;
-        this.clasa_energetica = a.clasa_energetica;
-        this.nrPrograme = a.nrPrograme;
-        this.functii = a.functii;
+    public MasinaSpalatRufe(MasinaSpalatRufe f) {
+        super.setBrand(f.getBrand());
+        super.setModel(f.getModel());
+        super.setPret(f.getPret());
+        super.setCapacitate(f.getCapacitate());
+        super.setDisponibilitate(f.getDisponibilitate());
+        super.setTip_electrocasnice(f.getTip_electrocasnice());
+        super.setRating(f.getRating());
+        this.tip_incastrare = f.tip_incastrare;
+        this.tip_display = f.tip_display;
+        this.clasa_energetica = f.clasa_energetica;
+        this.nrPrograme = f.nrPrograme;
+        this.functii = f.functii;
     
     }
 //override

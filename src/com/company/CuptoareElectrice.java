@@ -37,7 +37,13 @@ public class CuptoareElectrice extends Electrocasnice {
     }
 
     public CuptoareElectrice(CuptoareElectrice f) {
-    
+        super.setBrand(f.getBrand());
+        super.setModel(f.getModel());
+        super.setPret(f.getPret());
+        super.setCapacitate(f.getCapacitate());
+        super.setDisponibilitate(f.getDisponibilitate());
+        super.setTip_electrocasnice(f.getTip_electrocasnice());
+        super.setRating(f.getRating());
         this.tip_incastrare = f.tip_incastrare;
         this.tip_produs = f.tip_produs;
         this.tip_culoare=f.tip_culoare;

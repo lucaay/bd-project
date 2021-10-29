@@ -39,8 +39,14 @@ public class Frigider extends Electrocasnice {
   
     }
 
-    public Frigider(Frigider f,Electrocasnice e) {
-        super(e);
+    public Frigider(Frigider f) {
+        super.setBrand(f.getBrand());
+        super.setModel(f.getModel());
+        super.setPret(f.getPret());
+        super.setCapacitate(f.getCapacitate());
+        super.setDisponibilitate(f.getDisponibilitate());
+        super.setTip_electrocasnice(f.getTip_electrocasnice());
+        super.setRating(f.getRating());
         this.tip_incastrare = f.tip_incastrare;
         this.tip_display = f.tip_display;
         this.clasa_energetica = f.clasa_energetica;
@@ -49,6 +55,8 @@ public class Frigider extends Electrocasnice {
         this.functii = f.functii;
         
     }
+
+     
     public String toString(){
 
         return super.toString()+"\n Tip Încastrare: "+tip_incastrare+"\n Tip Display: "+tip_display+

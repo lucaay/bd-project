@@ -12,7 +12,6 @@ public class Electrocasnice {
     private String brand;
     private String rating;
     private Vector<Integer> capacitate;
-
     Electrocasnice(){
         this.tip_electrocasnice="1/2/3/4/5/6";
         this.disponibilitate=false;
@@ -22,6 +21,8 @@ public class Electrocasnice {
         this.rating="🌟";
         this.capacitate=new Vector<Integer>();
     }
+  
+    
     Electrocasnice(Electrocasnice e){
         this.tip_electrocasnice=e.tip_electrocasnice;
         this.pret=e.pret;
@@ -29,7 +30,7 @@ public class Electrocasnice {
         this.model=e.model;
         this.brand=e.brand;
         this.rating=e.rating;
-        this.capacitate=new Vector<Integer>();
+        this.capacitate=new Vector<Integer>(3);
         for(int i=0;i<e.capacitate.capacity();i++){
             this.capacitate.add(i,e.capacitate.get(i));
         }

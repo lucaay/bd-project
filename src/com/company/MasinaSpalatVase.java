@@ -35,8 +35,14 @@ public class MasinaSpalatVase extends Electrocasnice {
       
     }
 
-    public MasinaSpalatVase(MasinaSpalatVase v,Electrocasnice e) {
-        super(e);
+    public MasinaSpalatVase(MasinaSpalatVase v) {
+        super.setBrand(v.getBrand());
+        super.setModel(v.getModel());
+        super.setPret(v.getPret());
+        super.setCapacitate(v.getCapacitate());
+        super.setDisponibilitate(v.getDisponibilitate());
+        super.setTip_electrocasnice(v.getTip_electrocasnice());
+        super.setRating(v.getRating());
         this.tip_incastrare = v.tip_incastrare;
         this.tip_display = v.tip_display;
         this.clasa_energetica = v.clasa_energetica;

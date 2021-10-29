@@ -17,9 +17,15 @@ public class Espressor extends Electrocasnice {
         
     }
 
-    public Espressor(Espressor l,Electrocasnice e){
-       super(e);
-       this.putere=l.putere;
+    public Espressor(Espressor f){
+        super.setBrand(f.getBrand());
+        super.setModel(f.getModel());
+        super.setPret(f.getPret());
+        super.setCapacitate(f.getCapacitate());
+        super.setDisponibilitate(f.getDisponibilitate());
+        super.setTip_electrocasnice(f.getTip_electrocasnice());
+        super.setRating(f.getRating());
+        this.putere=f.putere;
     }
     public String toString(){
 

@@ -24,7 +24,13 @@ public class CafetieraFiltru extends Electrocasnice {
     }
 
     public CafetieraFiltru(CafetieraFiltru l){
-        
+        super.setBrand(l.getBrand());
+        super.setModel(l.getModel());
+        super.setPret(l.getPret());
+        super.setCapacitate(l.getCapacitate());
+        super.setDisponibilitate(l.getDisponibilitate());
+        super.setTip_electrocasnice(l.getTip_electrocasnice());
+        super.setRating(l.getRating());
         this.culoare=l.culoare;
         this.tip_cafea=l.tip_cafea;
         

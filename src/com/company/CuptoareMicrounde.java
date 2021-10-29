@@ -35,8 +35,14 @@ public class CuptoareMicrounde extends Electrocasnice {
 
       }
   
-      public CuptoareMicrounde(CuptoareMicrounde f,Electrocasnice e) {
-          super(e);
+      public CuptoareMicrounde(CuptoareMicrounde f) {
+        super.setBrand(f.getBrand());
+        super.setModel(f.getModel());
+        super.setPret(f.getPret());
+        super.setCapacitate(f.getCapacitate());
+        super.setDisponibilitate(f.getDisponibilitate());
+        super.setTip_electrocasnice(f.getTip_electrocasnice());
+        super.setRating(f.getRating());
           this.tip_incastrare = f.tip_incastrare;
           this.tip_panoucomanda = f.tip_panoucomanda;
           this.tip_modalitatigatire = f.tip_modalitatigatire;

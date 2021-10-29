@@ -14,7 +14,9 @@ public class Main {
         capacitate.add(24);
         capacitate.add(46);
         Frigider f=new Frigider(null, 20034f,null, "da","nu","poate",capacitate, "ce","wow",null, null, null, functii);
-        System.out.println(f+"\n");
+        Frigider y=new Frigider(f);
+        //y.setBrand(f.getBrand());
+        System.out.println(y+"\n");
       
     }
   }
