@@ -26,7 +26,48 @@ public class Frigider extends Electrocasnice {
       
    
     }
+    public void set_TipElectrocasnice(String s){
+        super.setTip_electrocasnice(s);
+    }
+    public void setpret(float s){
+        super.setPret(s);
+    }
+    public void set_Disponibilitate(Boolean s){
+        super.setDisponibilitate(s);
+    }
+    public void set_Model(String s){
+        super.setModel(s);
+    }
+    public void set_Brand(String s){
+        super.setBrand(s);
+    }
+    public void set_Rating(String s){
+        super.setRating(s);
+    }
+    public void set_Capacitate(Vector<Integer> s){
+        super.setCapacitate(s);
+    }
 
+    public void setIncastrare(String rez){
+        tip_incastrare=rez;
+    }
+
+    public void setTipDisplay(String rez){
+        tip_display=rez;
+    }
+    public void setClasaEnergetica(String rez){
+        clasa_energetica=rez;
+    }
+    public void setSistemDezghetare(String rez){
+        sistem_dezghetare=rez;
+    }
+    public void setSistemRacire(String rez){
+        sistem_racire=rez;
+    }
+    public void setFunctii(List<String> rez){
+        functii=rez;
+    }
+    
     Frigider(String tip_electrocasnice,float pret,Boolean disponibilitate,String model,String brand,String rating,Vector<Integer>capacitate,String tip_incastrare,String tip_display, String clasa_energetica, String sistem_dezghetare, String sistem_racire,
              List<String> functii) {
         super(tip_electrocasnice,pret,disponibilitate,model,brand,rating,capacitate);

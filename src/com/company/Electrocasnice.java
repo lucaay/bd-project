@@ -49,7 +49,7 @@ public class Electrocasnice {
     }
 
     public String toString(){
-        return " Tip: "+tip_electrocasnice+"\n Pret: "+pret+"\n Model: "+model+"\n Brand: "+brand
+        return " Tip: "+tip_electrocasnice+"\n Pret: "+pret+"\n Disponibilitate: "+disponibilitate+"\n Model: "+model+"\n Brand: "+brand
         +"\n Rating: "+rating+"\n Capacitate: "+capacitate;
     }
     ///setteri & getteri
