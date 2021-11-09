@@ -23,9 +23,9 @@ public class MasinaSpalatVase extends Electrocasnice {
     }
 
     MasinaSpalatVase(String tip_electrocasnice, float pret, Boolean disponibilitate, String model, String brand,
-            String rating, Vector<Integer> capacitate, String tip_incastrare, String tip_display,
-            String clasa_energetica, int nrPrograme, List<String> functii) {
-        super(tip_electrocasnice, pret, disponibilitate, model, brand, rating, capacitate);
+            String rating, String tip_incastrare, String tip_display, String clasa_energetica, int nrPrograme,
+            List<String> functii) {
+        super(tip_electrocasnice, pret, disponibilitate, model, brand, rating);
         this.tip_incastrare = tip_incastrare;
         this.tip_display = tip_display;
         this.clasa_energetica = clasa_energetica;
@@ -37,7 +37,6 @@ public class MasinaSpalatVase extends Electrocasnice {
         super.setBrand(v.getBrand());
         super.setModel(v.getModel());
         super.setPret(v.getPret());
-        super.setCapacitate(v.getCapacitate());
         super.setDisponibilitate(v.getDisponibilitate());
         super.setTip_electrocasnice(v.getTip_electrocasnice());
         super.setRating(v.getRating());

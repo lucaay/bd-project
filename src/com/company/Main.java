@@ -11,23 +11,19 @@ public class Main {
         functii.add("f1");
         functii.add("f2");
         functii.add("f3");
-        Vector<Integer> capacitate = new Vector<>(3);
-        capacitate.add(10);
-        capacitate.add(24);
-        capacitate.add(46);
-        Frigider f = new Frigider(null, 20034f, null, "da", "nu", "poate", capacitate, "ce", "wow", null, null, null,
-                functii);
-        Frigider y = new Frigider(f);
-        // y.setBrand(f.getBrand());
-        System.out.println(y + "\n");
+        Frigider f = new Frigider(null, 20034f, null, "da", "nu", "poate", "ce", "wow", null, null, null, functii);
+        System.out.println(f + "\n");
 
-        CafetieraFiltru c = new CafetieraFiltru("cafetiera", 500, true, "cf5", "heinner", "5 Stars", capacitate,
-                "black", "filtru");
+        CafetieraFiltru c = new CafetieraFiltru("cafetiera", 500, true, "cf5", "heinner", "5 Stars", "black", "filtru");
 
         System.out.println(c + "\n");
 
-        Espressor e = new Espressor("espressor", 320, false, "g5", "acer", "5 stelle", capacitate, 5000);
+        Espressor e = new Espressor("espressor", 320, false, "g5", "acer", "5 stelle", 5000);
         System.out.println(e + "\n");
+
+        // MasinaSpalatRufe r = new MasinaSpalatRufe("Masina de spalat", 7687, true,
+        // "GXT23", "Arctic", "5 stele",
+        // "incorporat", "LED", "A+", 15, "Spalare rapida, Spalare la 30grade");
 
     }
 }

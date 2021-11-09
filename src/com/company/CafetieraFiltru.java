@@ -17,8 +17,8 @@ public class CafetieraFiltru extends Electrocasnice {
     }
 
     CafetieraFiltru(String tip_electrocasnice, float pret, Boolean disponibilitate, String model, String brand,
-            String rating, Vector<Integer> capacitate, String culoare, String tip_cafea) {
-        super(tip_electrocasnice, pret, disponibilitate, model, brand, rating, capacitate);
+            String rating, String culoare, String tip_cafea) {
+        super(tip_electrocasnice, pret, disponibilitate, model, brand, rating);
         this.culoare = culoare;
         this.tip_cafea = tip_cafea;
 
@@ -28,7 +28,6 @@ public class CafetieraFiltru extends Electrocasnice {
         super.setBrand(l.getBrand());
         super.setModel(l.getModel());
         super.setPret(l.getPret());
-        super.setCapacitate(l.getCapacitate());
         super.setDisponibilitate(l.getDisponibilitate());
         super.setTip_electrocasnice(l.getTip_electrocasnice());
         super.setRating(l.getRating());
