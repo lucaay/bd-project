@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 
 import java.util.List;
-import java.util.Vector;
+//import java.util.Vector;
 
 public class LadaFrigorifica extends Electrocasnice {
     ///// date membre

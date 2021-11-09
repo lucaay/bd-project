@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Vector;
+//import java.util.Vector;
 import java.util.List;
 
 public class Main {
@@ -21,9 +21,13 @@ public class Main {
         Espressor e = new Espressor("espressor", 320, false, "g5", "acer", "5 stelle", 5000);
         System.out.println(e + "\n");
 
-        // MasinaSpalatRufe r = new MasinaSpalatRufe("Masina de spalat", 7687, true,
-        // "GXT23", "Arctic", "5 stele",
-        // "incorporat", "LED", "A+", 15, "Spalare rapida, Spalare la 30grade");
+        MasinaSpalatRufe r = new MasinaSpalatRufe("Masini de spalat", 5500, true, "ghfs56", "Arctic", "4.5",
+                "incorporat", "LED", "A+", 12, "Spalare la 30grade, Spalare la 800 rpm");
+
+        System.out.println(r + "\n");
+
+        MasinaSpalatVase v = new MasinaSpalatVase("Masini de spalat", 3500, false, "ajdh49871", "Acer", "3",
+                "incorporat", "LCD", "A+", 4, "Spalare rapida, Spalare  cu temperatura scazuta");
 
     }
 }

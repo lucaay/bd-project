@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.Vector;
+//import java.util.Vector;
 
 public class Espressor extends Electrocasnice {
     ///// date membre
