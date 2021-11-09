@@ -38,6 +38,6 @@ public class CafetieraFiltru extends Electrocasnice {
 
     public String toString() {
 
-        return super.toString() + "\n Culoare: " + culoare + "\n Tip cafea(Macinata/boabe/capsule)" + tip_cafea;
+        return super.toString() + "\n Culoare: " + culoare + "\n Tip cafea: " + tip_cafea;
     }
 }

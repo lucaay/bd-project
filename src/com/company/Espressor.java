@@ -1,22 +1,27 @@
 package com.company;
 
-//import java.util.Vector;
 
 public class Espressor extends Electrocasnice {
-    ///// date membre
+    //Date membre
+    private String culoare;
     private float putere;
+    private String tipcafea;
 
-    ///// metode
+
+    //Metode
     Espressor() {
         super();
+        this.culoare = " ";
         this.putere = 0.01f;
+        this.tipcafea = " ";
     }
 
-    Espressor(String tip_electrocasnice, float pret, Boolean disponibilitate, String model, String brand, String rating,
-            float putere) {
+    Espressor(String tip_electrocasnice, float pret, Boolean disponibilitate, String model, String brand, String rating, String culoare,
+            float putere, String tipcafea) {
         super(tip_electrocasnice, pret, disponibilitate, model, brand, rating);
+        this.culoare = culoare;
         this.putere = putere;
-
+        this.tipcafea = tipcafea;
     }
 
     public Espressor(Espressor f) {
@@ -27,12 +32,9 @@ public class Espressor extends Electrocasnice {
         super.setDisponibilitate(f.getDisponibilitate());
         super.setTip_electrocasnice(f.getTip_electrocasnice());
         super.setRating(f.getRating());
+        this.culoare = f.culoare;
         this.putere = f.putere;
-    }
-
-    public String toString() {
-
-        return super.toString() + "\n Putere: " + putere;
+        this.tipcafea = f.tipcafea;
     }
 
     // setteri & getteri
@@ -42,5 +44,26 @@ public class Espressor extends Electrocasnice {
 
     public void setPutere(float putere) {
         this.putere = putere;
+    }
+
+    public String getTipcafea(){
+        return tipcafea;
+    }
+
+    public void setTipcafea(String tipcafea){
+        this.tipcafea = tipcafea;
+    }
+
+    public void setCuloare(String culoare){
+        this.culoare =culoare;
+    }
+
+    public String getCuloare(){
+        return culoare;
+    }
+
+    public String toString() {
+
+        return super.toString() + "\n Putere: " + putere + "W" + "\n Tip Cafea permisa: " + tipcafea + "\n Culoare: " + culoare;
     }
 }
