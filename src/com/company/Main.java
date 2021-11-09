@@ -13,8 +13,8 @@ public class Main {
         functii.add("f1");
         functii.add("f2");
         functii.add("f3");
-        Frigider f = new Frigider(null, 20034f, null, "da", "nu", "poate", "ce", "wow", null, null, null, functii);
-        System.out.println(f + "\n");
+      
+    
 
 
         //Cafetiera cu Filtru si Espressor testare.
