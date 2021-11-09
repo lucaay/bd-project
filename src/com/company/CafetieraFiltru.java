@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.Vector;
+//import java.util.Vector;
 
 public class CafetieraFiltru extends Electrocasnice {
     ///// date membre
@@ -38,6 +38,6 @@ public class CafetieraFiltru extends Electrocasnice {
 
     public String toString() {
 
-        return super.toString() + "\n Culoare: " + culoare + "\n Tip cafea(Macinata/boabe/capsule)" + tip_cafea;
+        return super.toString() + "\n Culoare: " + culoare + "\n Tip cafea: " + tip_cafea;
     }
 }

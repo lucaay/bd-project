@@ -1,7 +1,5 @@
 package com.company;
 
-
-
 public class Frigider extends Electrocasnice {
     ///// date membre
 

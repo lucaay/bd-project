@@ -1,6 +1,7 @@
 package com.company;
 
 
+
 public class Electrocasnice {
     private String tip_electrocasnice;
     private float pret;
