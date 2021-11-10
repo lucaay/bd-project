@@ -135,29 +135,29 @@ public class Main {
     }
 
     public static Vector<Frigider> vectorFrigidere() {
-        Frigider f1 = new Frigider("Frigorifice", 1149.99f, true, "AD60310M30MT", "Arctic", "4.63 stele", "Standard",
+        Frigider f1 = new Frigider("Frigorifice", 1149.99f, true, "AD60310M30MT", "Arctic", "4.63", "Standard",
                 "Fara", "F");
-        Frigider f2 = new Frigider("Frigorifice", 899.99f, true, "FDDV-213F", "Star-Light", "4.82 stele", "Standard",
+        Frigider f2 = new Frigider("Frigorifice", 899.99f, true, "FDDV-213F", "Star-Light", "4.82", "Standard",
                 "Fara", "F");
-        Frigider f3 = new Frigider("Frigorifice", 1799.99f, true, "RT38K5530S9/EO", "Samsung", "4.38 stele",
+        Frigider f3 = new Frigider("Frigorifice", 1799.99f, true, "RT38K5530S9/EO", "Samsung", "4.38",
                 "Incorporabil", "amoled", "F");
-        Frigider f4 = new Frigider("Frigorifice", 599.99f, true, "MDRD142FGF42", "MIDEA", "4.7 stele", "Standard",
+        Frigider f4 = new Frigider("Frigorifice", 599.99f, true, "MDRD142FGF42", "MIDEA", "4.7", "Standard",
                 "Fara", "F");
-        Frigider f5 = new Frigider("Frigorifice", 2209.99f, false, "RDNE505E30DZMN", "Beko", "4.7 stele", "Standard",
+        Frigider f5 = new Frigider("Frigorifice", 2209.99f, false, "RDNE505E30DZMN", "Beko", "4.7", "Standard",
                 "Touchscreen", "E");
-        Frigider f6 = new Frigider("Frigorifice", 1679.99f, true, "RDNT401I30WBN", "Beko", "4.7 stele", "Incorporabil",
+        Frigider f6 = new Frigider("Frigorifice", 1679.99f, true, "RDNT401I30WBN", "Beko", "4.7", "Incorporabil",
                 "Touchcreen", "F");
-        Frigider f7 = new Frigider("Frigorifice", 5099.99f, true, "K 28202SD", "Miele", "3.1 stele", "Standard",
+        Frigider f7 = new Frigider("Frigorifice", 5099.99f, true, "K 28202SD", "Miele", "3.1", "Standard",
                 "Touchscreen", "F");
-        Frigider f8 = new Frigider("Frigorifice", 1828.99f, true, "FBM260L", "CHiQ", "4.6 stele", "Incorporabil",
+        Frigider f8 = new Frigider("Frigorifice", 1828.99f, true, "FBM260L", "CHiQ", "4.6", "Incorporabil",
                 "Fara", "F");
-        Frigider f9 = new Frigider("Frigorifice", 1091.99f, true, "AK54305M30MT", "Arctic", "4.8 stele", "Standard",
+        Frigider f9 = new Frigider("Frigorifice", 1091.99f, true, "AK54305M30MT", "Arctic", "4.8", "Standard",
                 "Fara", "F");
-        Frigider f10 = new Frigider("Frigorifice", 1449.99f, true, "AK60366M40NF", "Arctic", "4.7 stele", "Standard",
+        Frigider f10 = new Frigider("Frigorifice", 1449.99f, true, "AK60366M40NF", "Arctic", "4.7", "Standard",
                 "Fara", "F");
-        Frigider f11 = new Frigider("Frigorifice", 2089.99f, true, "RN-308RDQM", "Daewoo", "4.63 stele", "Standard",
+        Frigider f11 = new Frigider("Frigorifice", 2089.99f, true, "RN-308RDQM", "Daewoo", "4.63", "Standard",
                 "vise", "H");
-        Frigider f12 = new Frigider("Frigorifice", 3899.99f, true, "KFN 28132 ws", "Miele", "4.63 stele",
+        Frigider f12 = new Frigider("Frigorifice", 3899.99f, true, "KFN 28132 ws", "Miele", "4.63",
                 "Incorporabil", "Touchscreen", "F");
 
         Vector<Frigider> F = new Vector<Frigider>(12);
@@ -317,6 +317,11 @@ public class Main {
             System.out.println(vV[i] + "\n");
         }
 
+
+
+
+
+
         // teastare + vector Antonie 6+7 cred
 
         Frigider f1 = new Frigider();
@@ -335,23 +340,39 @@ public class Main {
         Vector<LadaFrigorifica> lf = vectorLF();
         for (int i = 0; i < lf.capacity(); i++)
             System.out.println(lf.get(i) + "\n" + "\n" + "\n");
+
+
+        for(int i=0;i<f.capacity();i++){
+            if(f.get(i).getBrand()=="Arctic")
+             
+                System.out.println(f.get(i));
+        }
+        float s;
+        System.out.println( "\n" + "\n" + "\n"+ "\n" + "\n" + "\n");
+        System.out.println("Sort by rating>4");
+        for(int i=0;i<f.capacity();i++)
+        {
+            s=Float.parseFloat(f.get(i).getRating());
+            if(s>=4)
+            System.out.println(f.get(i));
+        }
+
         // gata cu ale lui Antonie cam ez
 
-        // Cuptoare Microunde si Cuptoare Electrice testare
-        CuptoareMicrounde d = new CuptoareMicrounde("Cuptoare cu Microunde", 256.99f, true, "KOR-6S20W", "Daewoo",
-                "4.5", "Standard", "Mecanic", "Microunde", "Alb", "Timer, Pornire intarziata, Interior neaderent");
-        System.out.println(d + "\n");
-        CuptoareElectrice p = new CuptoareElectrice("Cuptoare Electrice", 599.99f, true, "CEA-4520DBL", "Star-Light",
-                "5", "Prajire, Grilling, Convectie, Coacere", "Negru",
-                "Oprire automata, Iluminare, Timer, Termostat, Semnal acustic, Indicator luminos, Dezghetare", 2000,
-                230);
-        System.out.println(p + "\n");
+       // Cuptoare Microunde si Cuptoare Electrice testare
+       CuptoareMicrounde d= new CuptoareMicrounde("Cuptoare cu Microunde", 256.99f, true, "KOR-6S20W", "Daewoo", "4.5", "Standard", "Mecanic", "Microunde", "Alb", "Timer, Pornire intarziata, Interior neaderent");
+       System.out.println(d + "\n");
+       CuptoareElectrice p= new CuptoareElectrice("Cuptoare Electrice", 599.99f, true, "CEA-4520DBL", "Star-Light", "5", "Prajire, Grilling, Convectie, Coacere", "Negru", "Oprire automata, Iluminare, Timer, Termostat, Semnal acustic, Indicator luminos, Dezghetare", 2000 , 230 );
+       System.out.println( p+ "\n");
 
-        Vector<CuptoareMicrounde> cm = vectorCuptoareMicrounde();
-        for (int i = 0; i < cm.capacity(); i++)
-            System.out.println(cm.get(i) + "\n" + "\n" + "\n");
-        Vector<CuptoareElectrice> ce = vectorCuptoareElectrice();
-        for (int i = 0; i < ce.capacity(); i++)
-            System.out.println(ce.get(i) + "\n" + "\n" + "\n");
+       Vector<CuptoareMicrounde> cm= vectorCuptoareMicrounde(); 
+       for(int i=0;i<cm.capacity();i++)
+       System.out.println(cm.get(i)+"\n"+"\n"+"\n");
+       Vector<CuptoareElectrice> ce= vectorCuptoareElectrice(); 
+       for(int i=0;i<ce.capacity();i++)
+       System.out.println(ce.get(i)+"\n"+"\n"+"\n");
+        
+
+      
     }
 }
