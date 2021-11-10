@@ -286,6 +286,11 @@ public class Main {
             System.out.println(vR[i] + "\n");
         }
 
+        for (int i = 0; i < vR.length; i++) {
+            if (vR[i].getBrand().substring(0, 1) == "i") {
+                System.out.println(vR[i] + "\n");
+            }
+        }
         MasinaSpalatVase v1 = new MasinaSpalatVase("Masini de spalat vase", 5039.99f, true, "ajdh49871", "Acer", "3",
                 "incorporat", "LCD", "A+", 4, "Spalare rapida, Spalare  cu temperatura scazuta");
         MasinaSpalatVase v2 = new MasinaSpalatVase("Masini de spalat vase", 3853.99f, true, "ajdh49871", "Arctic", "3",
