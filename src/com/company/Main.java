@@ -139,10 +139,51 @@ public class Main {
         //Cafetiera cu Filtru si Espressor testare.
         CafetieraFiltru c = new CafetieraFiltru("Cafetiera cu Filtru", 709.90f, true, "Grind&Brew HD7769", "PHILIPS", "5 stele", "Negru", "Macinata/Boabe");
         System.out.println(c + "\n");
+        CafetieraFiltru caf = new CafetieraFiltru("Cafetiera", 189.90f, true, "Compact Home", "Russel Hobbs", "4.3 stele", "Argintiu", "Macinata");
+        System.out.println(caf + "\n");
+        CafetieraFiltru cfil = new CafetieraFiltru("Cafetiera", 293.34f,true, "MY4444", "MYRIA","No Reviews", "Gri","Boabe/Macinata");
+        System.out.println(cfil + "\b");
 
         Espressor e = new Espressor("Espressor" , 1499.99f, true, "Magnifica S", "DE LONGHI" , "4.5 stele", "Negru", 1480, "Boabe/Macinata");
         System.out.println(e + "\n");
+        Espressor e2 = new Espressor("Espressor", 2559.90f, true, "Seria 4300 EP4349/70", "Philips", "4.95 stele", "Negru", 1500f, "Boabe");
+        System.out.println(e2 + "\n");
+        Espressor e3 = new Espressor("Espressor", 405.93f,true ,"Genio S Touch " ,"Krups" ,"5 stele" ,"Argintiu" ,1500 ,"Capsule" );
+        System.out.println(e3 + "\n");
 
+        //vectori Cafetiera
+        CafetieraFiltru cf1 = new CafetieraFiltru("Cafetiera", 174.99f, true, "HD7459", "PHILIPS ", "5.0 stele", "Negru", "Macinata");
+        CafetieraFiltru cf2 = new CafetieraFiltru("Cafetiera", 89.90f, true , "CFM4350B", "BEKO", "4.8 stele", "Negru", "Macinata");
+        CafetieraFiltru cf3 = new CafetieraFiltru("Cafetiera", 172.90f, true, "Subito Mug", "TEFAL ", "4.9 stele", "Negru", "Macinata");
+        CafetieraFiltru cf4 = new CafetieraFiltru("Cafetiera", 183.93f, true, "MY4442", "MYRIA ", "No Reviews", "Gri", "Macinata");
+        CafetieraFiltru cf5 = new CafetieraFiltru("Cafetiera", 293.34f,true, "MY4444", "MYRIA","No Reviews", "Gri","Boabe/Macinata");
+        CafetieraFiltru cf6 = new CafetieraFiltru("Cafetiera", 692.90f, true, "AromaFresh ", "MELITTA ", "4 stele", "Greu", "Boabe/Macinata");
+        CafetieraFiltru cf7 = new CafetieraFiltru("Cafetiera", 398.93f, true, "Delisia KM8680", "GRUNDIG ", "4 stele", "Argintiu", "Macinata");
+        CafetieraFiltru cf8 = new CafetieraFiltru("Cafetiera ", 319.93f, false, "BKK2300ALB", "BEKO", "4.8 stele", "Alb", "Macinata") ;
+        CafetieraFiltru cf9 = new CafetieraFiltru("Cafetiera", 189.90f, true, "Compact Home", "Russel Hobbs", "4.3 stele", "Argintiu", "Macinata");
+        CafetieraFiltru cf10 = new CafetieraFiltru("Cafetiera", 135.92f, true , "EKF3300", "Electrolux", "5 stele", "Negru", "Macinata");
+
+        CafetieraFiltru[] vCaf={cf1,cf2,cf3,cf4,cf5,cf6,cf7,cf8,cf9,cf10};
+        for(int i = 0; i<10; i++){
+            System.out.println(vCaf[i] + "\n");
+        }
+
+        //vectori Espressor
+        Espressor es1 = new Espressor("Espressor", 299.90f, true, "Essenza Mini Ruby", "De Longhi", "4.83 stele", "Rosu", 1260f, "Capsule");
+        Espressor es2 = new Espressor("Espressor", 2559.90f, true, "Seria 4300 EP4349/70", "Philips", "4.95 stele", "Negru", 1500f, "Boabe");
+        Espressor es3 = new Espressor("Espressor", 197.99f, true, "Tassimo Vivy II TAS1404", "Bosch", "3.70 stele", "Alb", 1300f, "Capsule");
+        Espressor es4 = new Espressor("Espressor", 239.99f, true, "NESCAFÉ Dolce Gusto", "Krups", "4.63 stele", "Rosu", 1500f, "Caspule");
+        Espressor es5 = new Espressor("Espressor", 2999.99f, true, "GranAroma SM6580", "Saeco ", "5 stele", "Gri", 1500f, "Macinata/Boabe");
+        Espressor es6 = new Espressor("Espressor", 1288.99f, true , "Picto Arabica", "Krups", "4.68 stele", "Negru", 1450f, "Macinata/Boabe");
+        Espressor es7 = new Espressor("Espressor", 389.90f, true, "Essenza Mini", "Krups", "4.94 stele", "Negru", 1300, "Capsule");
+        Espressor es8 = new Espressor("Espressor", 405.93f,true ,"Genio S Touch " ,"Krups" ,"5 stele" ,"Argintiu" ,1500 ,"Capsule" );
+        Espressor es9 = new Espressor("Espressor", 1649.90f, true, "Intuition", "Krups", "4.70 stele", "Negru", 1450, "Negru");
+        Espressor es10 = new Espressor("Espressor", 1599.90f,  false, "ECAM 22.110 ", "DeLonghi", "4.64 stele", "Argintiu", 1450f, "Macinata/Boabe");
+
+        Espressor[] vEsp={es1,es2,es3,es4,es5,es6,es7,es8,es9,es10};
+        for(int i = 0; i<10; i++){
+            System.out.println(vEsp[i] + "\n");
+        }
 
         //Masina de Spalat rufe si Masina de spalat Vase testare.
         MasinaSpalatRufe r = new MasinaSpalatRufe("Masini de spalat", 5500, true, "ghfs56", "Arctic", "4.5",
