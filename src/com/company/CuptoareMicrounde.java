@@ -1,7 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
+
 //import java.util.Vector;
 
 public class CuptoareMicrounde extends Electrocasnice {
@@ -10,7 +9,7 @@ public class CuptoareMicrounde extends Electrocasnice {
     private String tip_panoucomanda;
     private String tip_modalitatigatire;
     private String tip_culoare;
-    private List<String> functii;
+    private String functii;
 
     ///// metode
     CuptoareMicrounde() {
@@ -18,20 +17,20 @@ public class CuptoareMicrounde extends Electrocasnice {
         tip_incastrare = "Necunoscut";
         tip_panoucomanda = "Necunoscut";
         tip_culoare = "Necunoscut";
-        functii = new ArrayList<String>();
-        functii.add("Necunoscut");
+        functii = "Necunoscut";
         // capacitate
 
     }
 
     CuptoareMicrounde(String tip_electrocasnice, float pret, Boolean disponibilitate, String model, String brand,
             String rating, String tip_incastrare, String tip_panoucomanda, String tip_modalitatigatire,
-            String tip_culoare, List<String> functii) {
+            String tip_culoare, String functii) {
         super(tip_electrocasnice, pret, disponibilitate, model, brand, rating);
         this.tip_incastrare = tip_incastrare;
         this.tip_panoucomanda = tip_panoucomanda;
         this.tip_modalitatigatire = tip_modalitatigatire;
         this.tip_culoare = tip_culoare;
+        this.functii = functii;
 
     }
 
@@ -52,7 +51,7 @@ public class CuptoareMicrounde extends Electrocasnice {
     public String toString() {
 
         return super.toString() + "\n Tip Încastrare: " + tip_incastrare + "\n Tip Panou Comanda: " + tip_panoucomanda
-                + "\n Tip Modalitati Gatire: " + tip_modalitatigatire + "\n Tip Culoare: " + tip_culoare + "\n Functii"
+                + "\n Tip Modalitati Gatire: " + tip_modalitatigatire + "\n Tip Culoare: " + tip_culoare + "\n Functii: "
                 + functii;
     }
 

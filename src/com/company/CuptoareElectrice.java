@@ -1,39 +1,35 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
+
 //import java.util.Vector;
 
 public class CuptoareElectrice extends Electrocasnice {
     ///// date membre
 
-    private String tip_incastrare;
-    private String tip_produs;
+    private String tip_gatire;
     private String tip_culoare;
-    private List<String> functii;
+    private String functii;
     private float putere;
     private float temperatura_maxima;
 
     ///// metode
     CuptoareElectrice() {
         super();
-        tip_incastrare = "Necunoscut";
-        tip_produs = "Necunoscut";
+        tip_gatire = "Necunoscut";
         tip_culoare = "Necunoscut";
-        functii = new ArrayList<String>();
-        functii.add("Necunoscut");
+        functii = "Necunoscut";
         putere = 0.01f;
         temperatura_maxima = 0.01f;
 
     }
 
     CuptoareElectrice(String tip_electrocasnice, float pret, Boolean disponibilitate, String model, String brand,
-            String rating, String tip_incastrare, String tip_produs, String tip_culoare, List<String> functii,
+            String rating, String tip_gatire, String tip_culoare, String functii,
             float putere, float temperatura_maxima) {
         super(tip_electrocasnice, pret, disponibilitate, model, brand, rating);
-        this.tip_incastrare = tip_incastrare;
-        this.tip_produs = tip_produs;
+        this.tip_gatire = tip_gatire;
         this.tip_culoare = tip_culoare;
+        this.functii = functii;
         this.putere = putere;
         this.temperatura_maxima = temperatura_maxima;
 
@@ -46,8 +42,7 @@ public class CuptoareElectrice extends Electrocasnice {
         super.setDisponibilitate(f.getDisponibilitate());
         super.setTip_electrocasnice(f.getTip_electrocasnice());
         super.setRating(f.getRating());
-        this.tip_incastrare = f.tip_incastrare;
-        this.tip_produs = f.tip_produs;
+        this.tip_gatire = f.tip_gatire;
         this.tip_culoare = f.tip_culoare;
         this.functii = f.functii;
         this.putere = f.putere;
@@ -56,9 +51,9 @@ public class CuptoareElectrice extends Electrocasnice {
 
     public String toString() {
 
-        return super.toString() + "\n Tip Încastrare: " + tip_incastrare + "\n Tip Produs: " + tip_produs
-                + "\n Tip Culoare: " + tip_culoare + "\n Functii" + functii + "\n Putere:" + putere
-                + "\n Temperatura Maxima:" + temperatura_maxima;
+        return super.toString()  + "\n Tip Gatire: " + tip_gatire
+                + "\n Tip Culoare: " + tip_culoare + "\n Functii: " + functii + "\n Putere: " + putere + "W"
+                + "\n Temperatura Maxima:" + temperatura_maxima + "C";
     }
 
 }
