@@ -101,6 +101,15 @@ public class Main {
 
 
         //teastare + vector Antonie 6+7 cred
+
+        Frigider f1=new Frigider();
+        Frigider f2=new Frigider("Frigorifice", 1091.99f, true, "AK54305M30MT", "Arctic", "4.8 stele", "Standard", "Fara", "F");
+        Frigider f3=new Frigider(f2);
+        LadaFrigorifica lf1=new LadaFrigorifica();
+        LadaFrigorifica lf2=new LadaFrigorifica("Frigorifice", 1149.99f, true, "HCF-H205A+", "Heinner", "4.63 stele", "A+","Alb");
+        LadaFrigorifica lf3=new LadaFrigorifica(lf2);
+        System.out.println(f1+"\n"+f1+"\n"+f3+"\n"+lf1+"\n"+lf1+"\n"+lf3+"\n"+"\n"+"\n");
+
         Vector<Frigider> f=  vectorFrigidere();
         for(int i=0;i<f.capacity();i++)
          System.out.println(f.get(i)+"\n"+"\n"+"\n");
