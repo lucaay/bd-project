@@ -1,7 +1,7 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 //import java.util.Vector;
 
 public class MasinaSpalatVase extends Electrocasnice {
@@ -50,7 +50,7 @@ public class MasinaSpalatVase extends Electrocasnice {
     public String toString() {
 
         return super.toString() + "\n Tip Încastrare: " + tip_incastrare + "\n Tip Display: " + tip_display
-                + "\n Clasa Energetica: " + clasa_energetica + "\n Numar Programe: " + nrPrograme + "\n Functii"
+                + "\n Clasa Energetica: " + clasa_energetica + "\n Numar Programe: " + nrPrograme + "\n Functii: "
                 + functii;
     }
 
