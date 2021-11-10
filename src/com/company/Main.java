@@ -332,19 +332,21 @@ public class Main {
             System.out.println(lf.get(i) + "\n" + "\n" + "\n");
         // gata cu ale lui Antonie cam ez
 
+        // Cuptoare Microunde si Cuptoare Electrice testare
+        CuptoareMicrounde d = new CuptoareMicrounde("Cuptoare cu Microunde", 256.99f, true, "KOR-6S20W", "Daewoo",
+                "4.5", "Standard", "Mecanic", "Microunde", "Alb", "Timer, Pornire intarziata, Interior neaderent");
+        System.out.println(d + "\n");
+        CuptoareElectrice p = new CuptoareElectrice("Cuptoare Electrice", 599.99f, true, "CEA-4520DBL", "Star-Light",
+                "5", "Prajire, Grilling, Convectie, Coacere", "Negru",
+                "Oprire automata, Iluminare, Timer, Termostat, Semnal acustic, Indicator luminos, Dezghetare", 2000,
+                230);
+        System.out.println(p + "\n");
 
-
-       // Cuptoare Microunde si Cuptoare Electrice testare
-         CuptoareMicrounde d= new CuptoareMicrounde("Cuptoare cu Microunde", 256.99f, true, "KOR-6S20W", "Daewoo", "4.5", "Standard", "Mecanic", "Microunde", "Alb", "Timer, Pornire intarziata, Interior neaderent");
-         System.out.println(d + "\n");
-         CuptoareElectrice p= new CuptoareElectrice("Cuptoare Electrice", 599.99f, true, "CEA-4520DBL", "Star-Light", "5", "Prajire, Grilling, Convectie, Coacere", "Negru", "Oprire automata, Iluminare, Timer, Termostat, Semnal acustic, Indicator luminos, Dezghetare", 2000 , 230 );
-         System.out.println( p+ "\n");
-
-         Vector<CuptoareMicrounde> cm= vectorCuptoareMicrounde(); 
-         for(int i=0;i<cm.capacity();i++)
-         System.out.println(cm.get(i)+"\n"+"\n"+"\n");
-         Vector<CuptoareElectrice> ce= vectorCuptoareElectrice(); 
-         for(int i=0;i<ce.capacity();i++)
-         System.out.println(ce.get(i)+"\n"+"\n"+"\n");
+        Vector<CuptoareMicrounde> cm = vectorCuptoareMicrounde();
+        for (int i = 0; i < cm.capacity(); i++)
+            System.out.println(cm.get(i) + "\n" + "\n" + "\n");
+        Vector<CuptoareElectrice> ce = vectorCuptoareElectrice();
+        for (int i = 0; i < ce.capacity(); i++)
+            System.out.println(ce.get(i) + "\n" + "\n" + "\n");
     }
 }
