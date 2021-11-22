@@ -173,7 +173,7 @@ public class Main {
         return F;
 
     }
-    public static void Test(){   
+    public  void Test(){   
         List<String> functii = new ArrayList<>();
          functii.add("f1");
          functii.add("f2");
