@@ -2,64 +2,60 @@ package com.company;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import java.awt.event.*;
+import java.util.Vector;
+import java.util.concurrent.ThreadLocalRandom;
 
-public class GUI extends JFrame {
-    
+import javax.print.attribute.standard.PrinterLocation;
+import javax.swing.*;  
+
+
+public class GUI extends JFrame implements ActionListener {
+
+    JPanel panel;
+    JButton fbuton;
+    JButton lbuton;
+    JButton meniu;
    
     public GUI(){
-        JLabel frigider = new JLabel();
-        JPanel panel=new JPanel();
+    
+        panel=new JPanel();
         panel.setLayout(null);
         panel.setOpaque(false);
-        JLabel ladaFrigorifica = new JLabel();
-        ImageIcon imgFrigider=new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\frigider.png");
+        ImageIcon meniuu=new  ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\meniu.png");
+        Image imeniu=meniuu.getImage();
+        Image newmeniu=imeniu.getScaledInstance(90, 55, Image.SCALE_SMOOTH);
+        meniuu=new ImageIcon(newmeniu);
+        ImageIcon imgFrigider=new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\frigider.png");
         Image ifrigider=imgFrigider.getImage();
         Image newfrigider=ifrigider.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         imgFrigider= new ImageIcon(newfrigider);
-        ImageIcon imgLadaFrigorifica=new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\lada_frigorifica.png");
+        ImageIcon imgLadaFrigorifica=new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\lada_frigorifica.png");
         Image ilada=imgLadaFrigorifica.getImage();
         Image newlada=ilada.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         imgLadaFrigorifica= new ImageIcon(newlada);
-
-        if(true){frigider.setText("Frigider");
-        frigider.setIcon(imgFrigider);
-        frigider.setHorizontalTextPosition(JLabel.CENTER);
-        frigider.setVerticalTextPosition(JLabel.TOP);
-        frigider.setForeground(new Color(0xffffff));
-        frigider.setFont(new Font("MV Boli",Font.PLAIN,20));
-        frigider.setBounds(60,200,500,500);
-        JButton fbuton=new JButton();
-        fbuton.setBounds(50,540,140,20);
-        fbuton.setText("frigidere");
-        panel.add(frigider);
+//####################buton frigidere##################################
+        fbuton=new JButton();
+        fbuton.setBounds(60,450,120,120);
+        fbuton.setBackground(new Color(0Xcc99ff));
+        fbuton.setIcon(imgFrigider);
+        fbuton.addActionListener(this);
         panel.add(fbuton);
-        
-    }
-
-        if(true){ladaFrigorifica.setText("Lada Frigorifica");
-            ladaFrigorifica.setIcon(imgLadaFrigorifica);
-            ladaFrigorifica.setHorizontalTextPosition(JLabel.CENTER);
-            ladaFrigorifica.setVerticalTextPosition(JLabel.TOP);
-            ladaFrigorifica.setForeground(new Color(0xffffff));
-            ladaFrigorifica.setFont(new Font("MV Boli",Font.PLAIN,20));
-            ladaFrigorifica.setBounds(50,-200,500,800);
-            JButton lbuton=new JButton();
-            lbuton.setBounds(36,280,160,20);
-            lbuton.setText("lazi frigorifice");
-            panel.add(ladaFrigorifica);
-            panel.add(lbuton);
-            }
-       
-
-
-
-
-
+//####################buton lada frigorifica###########################  
+        lbuton=new JButton();
+        lbuton.setBounds(50,200,120,120);
+        lbuton.setIcon(imgLadaFrigorifica);
+        lbuton.setBackground(new Color(0Xcc99ff));
+        lbuton.addActionListener(this);
+        panel.add(lbuton);
+//############################## meniu #################################     
+        meniu=new JButton();
+        meniu.setIcon(meniuu);
+        meniu.addActionListener(this);
+        meniu.setBackground(new Color(0Xcc99ff));
+        meniu.setBounds(1200,620,90,90);
+        panel.add(meniu);
+//############################ frame ###################################
 
         this.setTitle("Electrocasnice");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -67,12 +63,67 @@ public class GUI extends JFrame {
         this.setResizable(false);
         this.setVisible(true);
         this.add(panel);
-        ImageIcon image=new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\sergiu.jpg");
+        ImageIcon image=new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\sergiu.jpg");
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(new Color(0Xcc99ff));
        
     }
-    
    
+  @Override
+    public void actionPerformed(ActionEvent e)
+    { 
+        
+        if(e.getSource()==fbuton)
+            {
+               
+               meniuFrigider();
+            }
+            
+        if(e.getSource()==lbuton)
+            {
+                
+                meniuLadaFrigorifica();
+                
+            }
+        if(e.getSource()==meniu)
+        {
+            Meniu();
+        }
+    }  
+   
+    public void meniuFrigider(){
+        panel.removeAll();
+        panel.add(meniu);
+        panel.repaint();
+        Info info=new Info();
+        Vector <Frigider> frigidere= new Vector<Frigider>();
+        frigidere=info.vectorFrigidere();  
+        for(int i=0;i<frigidere.capacity();i++)
+            System.out.println(frigidere.get(i)+"\n"+"\n"+"\n" );
+
+           
+          
+            
     
+        
+        
+    }
+    public void meniuLadaFrigorifica(){
+        panel.removeAll();
+        panel.add(meniu);
+        panel.repaint();
+        Info info=new Info();
+        Vector <LadaFrigorifica> lf= new Vector<LadaFrigorifica>();
+        lf=info.vectorLF();  
+        for(int i=0;i<lf.capacity();i++)
+            System.out.println(lf.get(i)+"\n"+"\n"+"\n" );
+        
+        
+        
+    }
+    public void Meniu(){
+        panel.repaint();
+        panel.add(lbuton);
+        panel.add(fbuton);
+    }
 }
