@@ -13,6 +13,8 @@ public class GUI extends JFrame implements ActionListener {
     JPanel panel;
     JButton fbuton;
     JButton lbuton;
+    JButton cbuton;
+    JButton ebuton;
     JButton meniu;
    
     public GUI(){
@@ -32,6 +34,20 @@ public class GUI extends JFrame implements ActionListener {
         Image ilada=imgLadaFrigorifica.getImage();
         Image newlada=ilada.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         imgLadaFrigorifica= new ImageIcon(newlada);
+
+        //imagine cafetiera
+        ImageIcon cafetiera= new ImageIcon("proiectpoofacultate2022/src/com/company/imagini/Cafetiera.png");
+        Image newcaf = cafetiera.getImage();
+        Image inewcaf = newcaf.getScaledInstance(90 , 120, Image.SCALE_SMOOTH);
+        cafetiera = new ImageIcon(inewcaf);
+
+        //imagine espressor
+        ImageIcon espressor= new ImageIcon("proiectpoofacultate2022/src/com/company/imagini/Espressor.jpg");
+        Image newesp = espressor.getImage();
+        Image inewesp = newesp.getScaledInstance(130 , 130, Image.SCALE_SMOOTH);
+        espressor = new ImageIcon(inewesp);
+
+
 //####################buton frigidere##################################
         fbuton=new JButton();
         fbuton.setBounds(60,450,120,120);
@@ -53,6 +69,22 @@ public class GUI extends JFrame implements ActionListener {
         meniu.setBackground(new Color(0Xcc99ff));
         meniu.setBounds(1200,620,90,90);
         panel.add(meniu);
+//########################## Buton cafetiera ###########################
+        cbuton=new JButton();
+        cbuton.setBounds(300,450,120,120);
+        cbuton.setBackground(new Color(0Xcc99ff));
+        cbuton.setIcon(cafetiera);
+        cbuton.addActionListener(this);
+        panel.add(cbuton);
+//######################## si pt espressor
+        ebuton=new JButton();
+        ebuton.setBounds(300,200,120,120);
+        ebuton.setBackground(new Color(0Xcc99ff));
+        ebuton.setIcon(espressor);
+        ebuton.addActionListener(this);
+        panel.add(ebuton);
+
+
 //############################ frame ###################################
 
         this.setTitle("Electrocasnice");
@@ -166,5 +198,7 @@ public class GUI extends JFrame implements ActionListener {
         panel.repaint();
         panel.add(lbuton);
         panel.add(fbuton);
+        panel.add(cbuton);
+        panel.add(ebuton);
     }
 }
