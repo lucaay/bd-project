@@ -16,20 +16,28 @@ public class GUI extends JFrame implements ActionListener {
     JButton cbuton;
     JButton ebuton;
     JButton meniu;
-   
+    JLabel labcaf;
+    JLabel labesp;
+
     public GUI(){
     
         panel=new JPanel();
         panel.setLayout(null);
         panel.setOpaque(false);
+
+        //imagine meniu
         ImageIcon meniuu=new  ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\meniu.png");
         Image imeniu=meniuu.getImage();
         Image newmeniu=imeniu.getScaledInstance(90, 55, Image.SCALE_SMOOTH);
         meniuu=new ImageIcon(newmeniu);
+
+        //imagine frigider
         ImageIcon imgFrigider=new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\frigider.png");
         Image ifrigider=imgFrigider.getImage();
         Image newfrigider=ifrigider.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         imgFrigider= new ImageIcon(newfrigider);
+
+        //imagine lada frigorifica
         ImageIcon imgLadaFrigorifica=new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\lada_frigorifica.png");
         Image ilada=imgLadaFrigorifica.getImage();
         Image newlada=ilada.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
@@ -76,21 +84,21 @@ public class GUI extends JFrame implements ActionListener {
         cbuton.setIcon(cafetiera);
         cbuton.addActionListener(this);
         panel.add(cbuton);
-        JLabel labcaf = new JLabel();
-        labcaf.setText("Cafetiere");
-        labcaf.setBounds(330, 270, 120, 120);
-        panel.add(labcaf);
-//######################## si pt espressor
+        labesp = new JLabel();
+        labesp.setText("Cafetiere");
+        labesp.setBounds(330, 520, 120, 120);
+        panel.add(labesp);
+//######################## si pt espressoare
         ebuton=new JButton();
         ebuton.setBounds(300,200,120,120);
         ebuton.setBackground(new Color(0Xcc99ff));
         ebuton.setIcon(espressor);
         ebuton.addActionListener(this);
         panel.add(ebuton);
-        JLabel labesp = new JLabel();
-        labesp.setText("Espressoare");
-        labesp.setBounds(320, 520, 120, 120);
-        panel.add(labesp);
+        labcaf = new JLabel();
+        labcaf.setText("Espressoare");
+        labcaf.setBounds(325, 270, 120, 120);
+        panel.add(labcaf);
 
 
 //############################ frame ###################################
@@ -123,6 +131,12 @@ public class GUI extends JFrame implements ActionListener {
                 meniuLadaFrigorifica();
                 
             }
+        if(e.getSource()==cbuton)
+        {
+            MeniuCafetiera();
+        }
+
+
         if(e.getSource()==meniu)
         {
             Meniu();
@@ -198,7 +212,40 @@ public class GUI extends JFrame implements ActionListener {
         
     }
            
-        
+    public void MeniuCafetiera(){
+        panel.removeAll();
+        panel.add(meniu);
+        panel.repaint();
+        Info info=new Info();
+        Vector <CafetieraFiltru> cf= new Vector<CafetieraFiltru>();
+        cf=info.vectorCafetiere();
+
+        //Border border= BorderFactory.createLineBorder(Color.green,3);
+        int x=5,y=20,c=0;
+        for(int i=0;i<cf.capacity();i++)
+        {
+            c++;
+            JLabel label=new JLabel();
+            label.setText("<html>  Brand: "+ cf.get(i).getBrand()+"<html> <br/> Model: "+cf.get(i).getModel()+"<html> <br/> Pret: "+cf.get(i).getPret());
+            //label.setBorder(border);
+            ImageIcon meniuu=new  ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\"+cf.get(i).getModel()+".png");
+            Image imeniu=meniuu.getImage();
+            Image newmeniu=imeniu.getScaledInstance(150,150, Image.SCALE_SMOOTH);
+            meniuu=new ImageIcon(newmeniu);
+            label.setIcon(meniuu);
+            label.setFont(new Font("MV Boli",Font.PLAIN,9));
+            //label.setBackground(Color.black);
+            //label.setOpaque(true);
+            label.setHorizontalTextPosition(JLabel.CENTER);
+            label.setVerticalTextPosition(JLabel.BOTTOM);
+            label.setBounds(x,y,150,300);
+            if(x<1276 && c<6) x+=235; else {y+=310; c=0; x=5;}
+            panel.add(label);
+        }
+
+    }
+
+
         
         
     public void Meniu(){
@@ -208,6 +255,8 @@ public class GUI extends JFrame implements ActionListener {
         panel.add(fbuton);
         panel.add(cbuton);
         panel.add(ebuton);
+        panel.add(labcaf);
+        panel.add(labesp);
 
 
 
