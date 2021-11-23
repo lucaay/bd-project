@@ -36,6 +36,14 @@ public class CafetieraFiltru extends Electrocasnice {
 
     }
 
+    public void setCuloare(String culoare){
+        this.culoare =culoare;
+    }
+
+    public String getCuloare(){
+        return culoare;
+    }
+
     public String toString() {
 
         return super.toString() + "\n Culoare: " + culoare + "\n Tip cafea: " + tip_cafea;
