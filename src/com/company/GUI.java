@@ -218,7 +218,7 @@ public class GUI extends JFrame implements ActionListener {
         panel.repaint();
         Info info=new Info();
         Vector <CafetieraFiltru> cf= new Vector<CafetieraFiltru>();
-        cf=info.vectorCafetiere();
+        cf= Info.vectorCafetiere();
 
         //Border border= BorderFactory.createLineBorder(Color.green,3);
         int x=5,y=20,c=0;
@@ -228,7 +228,7 @@ public class GUI extends JFrame implements ActionListener {
             JLabel label=new JLabel();
             label.setText("<html>  Brand: "+ cf.get(i).getBrand()+"<html> <br/> Model: "+cf.get(i).getModel()+"<html> <br/> Pret: "+cf.get(i).getPret());
             //label.setBorder(border);
-            ImageIcon meniuu=new  ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\"+cf.get(i).getModel()+".png");
+            ImageIcon meniuu=new  ImageIcon("proiectpoofacultate2022/src/com/company/imagini/cafetiere/"+cf.get(i).getModel()+".jpg");
             Image imeniu=meniuu.getImage();
             Image newmeniu=imeniu.getScaledInstance(150,150, Image.SCALE_SMOOTH);
             meniuu=new ImageIcon(newmeniu);

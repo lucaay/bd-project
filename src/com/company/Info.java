@@ -113,20 +113,20 @@ public class Info {
         Espressor es10 = new Espressor("Espressor", 1599.90f, false, "ECAM 22.110 ", "DeLonghi", "4.64 stele",
                 "Argintiu", 1450f, "Macinata/Boabe");
 
-        Vector<Espressor> vEsp = new Vector<>(10);
-        vEsp.add(1,es1);
-        vEsp.add(2,es2);
-        vEsp.add(3,es3);
-        vEsp.add(4,es4);
-        vEsp.add(5,es5);
-        vEsp.add(6,es6);
-        vEsp.add(7,es7);
-        vEsp.add(8,es8);
-        vEsp.add(9,es9);
-        vEsp.add(10,es10);
+        Vector<Espressor> es = new Vector<>(10);
+        es.add(1,es1);
+        es.add(2,es2);
+        es.add(3,es3);
+        es.add(4,es4);
+        es.add(5,es5);
+        es.add(6,es6);
+        es.add(7,es7);
+        es.add(8,es8);
+        es.add(9,es9);
+        es.add(10,es10);
 
 
-        return vEsp;
+        return es;
     }
 
 
@@ -152,22 +152,22 @@ public class Info {
         CafetieraFiltru cf10 = new CafetieraFiltru("Cafetiera", 135.92f, true, "EKF3300", "Electrolux", "5 stele",
                 "Negru", "Macinata");
 
-        Vector<CafetieraFiltru> vCaf = new Vector<>(10);
-        vCaf.add(1,cf1);
-        vCaf.add(2,cf2);
-        vCaf.add(3,cf3);
-        vCaf.add(4,cf4);
-        vCaf.add(5,cf5);
-        vCaf.add(6,cf6);
-        vCaf.add(7,cf7);
-        vCaf.add(8,cf8);
-        vCaf.add(9,cf9);
-        vCaf.add(10,cf10);
+        Vector<CafetieraFiltru> cf = new Vector<>(10);
+        cf.add(1,cf1);
+        cf.add(2,cf2);
+        cf.add(3,cf3);
+        cf.add(4,cf4);
+        cf.add(5,cf5);
+        cf.add(6,cf6);
+        cf.add(7,cf7);
+        cf.add(8,cf8);
+        cf.add(9,cf9);
+        cf.add(10,cf10);
 
 
 
 
-        return vCaf;
+        return cf;
     }
     
 
