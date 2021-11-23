@@ -32,43 +32,43 @@ public class GUI extends JFrame implements ActionListener {
         panel.setOpaque(false);
 
         // imagine meniu
-        ImageIcon meniuu = new ImageIcon("./src/com/company/imagini/meniu.png");
+        ImageIcon meniuu = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\meniu.png");
         Image imeniu = meniuu.getImage();
         Image newmeniu = imeniu.getScaledInstance(90, 55, Image.SCALE_SMOOTH);
         meniuu = new ImageIcon(newmeniu);
 
         // imagine frigider
-        ImageIcon imgFrigider = new ImageIcon("./src/com/company/imagini/frigider.png");
+        ImageIcon imgFrigider = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\frigider.png");
         Image ifrigider = imgFrigider.getImage();
         Image newfrigider = ifrigider.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         imgFrigider = new ImageIcon(newfrigider);
 
         // imagine lada frigorifica
-        ImageIcon imgLadaFrigorifica = new ImageIcon("./src/com/company/imagini/lada_frigorifica.png");
+        ImageIcon imgLadaFrigorifica = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\lada_frigorifica.png");
         Image ilada = imgLadaFrigorifica.getImage();
         Image newlada = ilada.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         imgLadaFrigorifica = new ImageIcon(newlada);
 
         // imagine cafetiera
-        ImageIcon cafetiera = new ImageIcon("./src/com/company/imagini/Cafetiera.png");
+        ImageIcon cafetiera = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\Cafetiera.png");
         Image newcaf = cafetiera.getImage();
         Image inewcaf = newcaf.getScaledInstance(90, 120, Image.SCALE_SMOOTH);
         cafetiera = new ImageIcon(inewcaf);
 
         // imagine espressor
-        ImageIcon espressor = new ImageIcon("./src/com/company/imagini/Espressor.jpg");
+        ImageIcon espressor = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\Espressor.jpg");
         Image newesp = espressor.getImage();
         Image inewesp = newesp.getScaledInstance(130, 130, Image.SCALE_SMOOTH);
         espressor = new ImageIcon(inewesp);
 
         // imagine masina de spalat vase
-        ImageIcon masina_vase = new ImageIcon("./src/com/company/imagini/masini_de_spalat_vase/masina_spalat_vase.png");
+        ImageIcon masina_vase = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\masini_de_spalat_vase\\masina_spalat_vase.png");
         Image newvase = masina_vase.getImage();
         Image inevase = newvase.getScaledInstance(90, 150, Image.SCALE_SMOOTH);
         masina_vase = new ImageIcon(inevase);
 
         // imagine masina de spalat rufe
-        ImageIcon masina_rufe = new ImageIcon("./src/com/company/imagini/masini_de_spalat_rufe/masina_spalat_rufe.png");
+        ImageIcon masina_rufe = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\masini_de_spalat_rufe\\masina_spalat_rufe.png");
         Image newruse = masina_rufe.getImage();
         Image inewrufe = newruse.getScaledInstance(150, 150, Image.SCALE_SMOOTH);
         masina_rufe = new ImageIcon(inewrufe);
