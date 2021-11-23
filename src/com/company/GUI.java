@@ -289,41 +289,19 @@ public class GUI extends JFrame implements ActionListener {
         panel.removeAll();
         panel.add(meniu);
         panel.repaint();
-        Info info = new Info();
-        Vector<CafetieraFiltru> cf = new Vector<CafetieraFiltru>();
-        cf = info.vectorCafetiere();
 
-        // Border border= BorderFactory.createLineBorder(Color.green,3);
-        int x = 5, y = 20, c = 0;
-        for (int i = 0; i < cf.capacity(); i++) {
-            c++;
-            JLabel label = new JLabel();
-            label.setText("<html>  Brand: " + cf.get(i).getBrand() + "<html> <br/> Model: " + cf.get(i).getModel()
-                    + "<html> <br/> Pret: " + cf.get(i).getPret());
-            // label.setBorder(border);
-            ImageIcon meniuu = new ImageIcon(
-                    "proiectpoofacultate2022/src/com/company/imagini/cafetiere/" + cf.get(i).getModel() + ".jpg");
-            Image imeniu = meniuu.getImage();
-            Image newmeniu = imeniu.getScaledInstance(150, 150, Image.SCALE_SMOOTH);
-            meniuu = new ImageIcon(newmeniu);
-            label.setIcon(meniuu);
-            label.setFont(new Font("MV Boli", Font.PLAIN, 9));
-            // label.setBackground(Color.black);
-            // label.setOpaque(true);
-            label.setHorizontalTextPosition(JLabel.CENTER);
-            label.setVerticalTextPosition(JLabel.BOTTOM);
-            label.setBounds(x, y, 150, 300);
-            if (x < 1276 && c < 6)
-                x += 235;
-            else {
-                y += 310;
-                c = 0;
-                x = 5;
-            }
-            panel.add(label);
-        }
-
+        JLabel label = new JLabel();
+        label.setText("<html>  Brand: <html> <br/> Model: <html> <br/> Pret:");
+        ImageIcon poza = new ImageIcon("proiectpoofacultate2022/src/com/company/imagini/cafetiere/CFM4350B.jpg");
+        Image newpoza = poza.getImage();
+        Image ipoza = newpoza.getScaledInstance(90, 150, Image.SCALE_SMOOTH);
+        poza = new ImageIcon(ipoza);
+        label.setIcon(poza);
+        label.setBounds(100, 200, 150, 300);
+        label.setFont(new Font("MV Boli", Font.PLAIN, 9));
+        panel.add(label);
     }
+
 
     public void MeniuEspressor(){
         panel.removeAll();

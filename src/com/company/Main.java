@@ -244,7 +244,7 @@ public class Main {
 
                   Espressor[] vEsp = { es1, es2, es3, es4, es5, es6, es7, es8, es9, es10 };
                   for(int i = 0; i < 10; i++) {
-                        if(vEsp[i].getTipcafea()=="Boabe"&&vEsp[i].getTipcafea()=="Macinata/Boabe")
+                        if(vEsp[i].getTipcafea()=="Boabe" || vEsp[i].getTipcafea()=="Macinata/Boabe")
                         System.out.println(vEsp[i] + "\n");
                   }
 
