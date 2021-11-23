@@ -76,6 +76,10 @@ public class GUI extends JFrame implements ActionListener {
         cbuton.setIcon(cafetiera);
         cbuton.addActionListener(this);
         panel.add(cbuton);
+        JLabel labcaf = new JLabel();
+        labcaf.setText("Cafetiere");
+        labcaf.setBounds(330, 270, 120, 120);
+        panel.add(labcaf);
 //######################## si pt espressor
         ebuton=new JButton();
         ebuton.setBounds(300,200,120,120);
@@ -83,6 +87,10 @@ public class GUI extends JFrame implements ActionListener {
         ebuton.setIcon(espressor);
         ebuton.addActionListener(this);
         panel.add(ebuton);
+        JLabel labesp = new JLabel();
+        labesp.setText("Espressoare");
+        labesp.setBounds(320, 520, 120, 120);
+        panel.add(labesp);
 
 
 //############################ frame ###################################
@@ -200,5 +208,11 @@ public class GUI extends JFrame implements ActionListener {
         panel.add(fbuton);
         panel.add(cbuton);
         panel.add(ebuton);
+
+
+
+
+
+
     }
 }
