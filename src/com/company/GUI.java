@@ -188,6 +188,10 @@ public class GUI extends JFrame implements ActionListener {
             MeniuCafetiera();
         }
 
+        if(e.getSource() == ebuton){
+            MeniuEspressor();
+        }
+
         if (e.getSource() == mrButton) {
             meniuMasinaSpalatRufe();
 
@@ -320,6 +324,13 @@ public class GUI extends JFrame implements ActionListener {
         }
 
     }
+
+    public void MeniuEspressor(){
+        panel.removeAll();
+        panel.add(meniu);
+        panel.repaint();
+    }
+
 
     public void meniuMasinaSpalatRufe() {
         panel.removeAll();
