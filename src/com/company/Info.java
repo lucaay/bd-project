@@ -5,25 +5,25 @@ import java.util.Vector;
 public class Info {
 
     public  Vector<LadaFrigorifica> vectorLF() {
-        LadaFrigorifica lf1 = new LadaFrigorifica("Frigorifice", 1419.99f, true, "AO47P30", "Arctic", "4.7 stele", "C",
+        LadaFrigorifica lf1 = new LadaFrigorifica("Frigorifice", 1399.99f, true, "AO47P30", "Arctic", "4.7 stele", "C",
                 "Alb");
-        LadaFrigorifica lf2 = new LadaFrigorifica("Frigorifice", 959.99f, true, "HCF-205NHA+", "Heinner", "3.6 stele",
-                "A+", "Alb");
-        LadaFrigorifica lf3 = new LadaFrigorifica("Frigorifice", 1149.99f, true, "HCF-205NHSA+", "Heinner", "3.6 stele",
+        LadaFrigorifica lf2 = new LadaFrigorifica("Frigorifice", 918.99f, true, "HCF_205NHA+", "Heinner", "5 stele",
+                "F", "Alb");
+        LadaFrigorifica lf3 = new LadaFrigorifica("Frigorifice", 1149.99f, true, "HCF_205NHSA+", "Heinner", "3.6 stele",
                 "A+", "Silver");
-        LadaFrigorifica lf4 = new LadaFrigorifica("Frigorifice", 1099.99f, true, "AD60310M30MT", "Arctic", "4.63 stele",
+        LadaFrigorifica lf4 = new LadaFrigorifica("Frigorifice", 1499.99f, true, "HSA37540N", "Beko", "4.96 stele",
                 "F", "Alb");
-        LadaFrigorifica lf5 = new LadaFrigorifica("Frigorifice", 1079.99f, true, "HCF-205NHBKA+", "Heinner",
+        LadaFrigorifica lf5 = new LadaFrigorifica("Frigorifice", 1079.99f, true, "HCF_205NHBKA+", "Heinner",
                 "4.8 stele", "A+", "Negru");
-        LadaFrigorifica lf6 = new LadaFrigorifica("Frigorifice", 1149.99f, true, "HCF-H205A+", "Heinner", "4.63 stele",
+        LadaFrigorifica lf6 = new LadaFrigorifica("Frigorifice", 916.30f, true, "HCF_H205A+", "Heinner", "4.63 stele",
                 "A+", "Alb");
-        LadaFrigorifica lf7 = new LadaFrigorifica("Frigorifice", 899.0f, true, "AD60310M30MT", "Arctic", "4.1 stele",
+        LadaFrigorifica lf7 = new LadaFrigorifica("Frigorifice", 899.0f, true, "CFFM_198FWH", "Star_Light", "4.1 stele",
                 "F", "Alb");
-        LadaFrigorifica lf8 = new LadaFrigorifica("Frigorifice", 1178.10f, true, " O20+", "Arctic", "3.6 stele", "A+",
+        LadaFrigorifica lf8 = new LadaFrigorifica("Frigorifice", 1599.99f, true, "WHM3911", "Whirpool", "4.87 stele", "A+",
                 "Alb");
-        LadaFrigorifica lf9 = new LadaFrigorifica("Frigorifice", 3133.98f, true, "Arktic by Hendi", "Arktic by Hendi",
+        LadaFrigorifica lf9 = new LadaFrigorifica("Frigorifice", 3133.98f, true, "ARKTIC by Hendi", "ARKTIC by Hendi",
                 "4.7 stele", "F", "Alb");
-        LadaFrigorifica lf10 = new LadaFrigorifica("Frigorifice", 11909.52f, false, "Paris 210 LED-HI ADT", "AHT",
+        LadaFrigorifica lf10 = new LadaFrigorifica("Frigorifice", 11909.52f, false, "Paris 210 LED_HI ADT", "AHT",
                 "fara", "F", "Alb");
         LadaFrigorifica lf11 = new LadaFrigorifica("Frigorifice", 4729.06f, true, "Sao Paulo H 175", "AHT", "fara", "F",
                 "Alb");
@@ -50,25 +50,25 @@ public class Info {
     public  Vector<Frigider> vectorFrigidere() {
         Frigider f1 = new Frigider("Frigorifice", 1149.99f, true, "AD60310M30MT", "Arctic", "4.63", "Standard",
                 "Fara", "F");
-        Frigider f2 = new Frigider("Frigorifice", 899.99f, true, "FDDV-213F", "Star-Light", "4.82", "Standard",
+        Frigider f2 = new Frigider("Frigorifice", 899.99f, true, "FDDV_213F", "Star-Light", "4.82", "Standard",
                 "Fara", "F");
-        Frigider f3 = new Frigider("Frigorifice", 1799.99f, true, "RT38K5530S9/EO", "Samsung", "4.38",
+        Frigider f3 = new Frigider("Frigorifice", 1799.99f, true, "RT38K5530S9_EO", "Samsung", "4.38",
                 "Incorporabil", "amoled", "F");
         Frigider f4 = new Frigider("Frigorifice", 599.99f, true, "MDRD142FGF42", "MIDEA", "4.7", "Standard",
                 "Fara", "F");
-        Frigider f5 = new Frigider("Frigorifice", 2209.99f, false, "RDNE505E30DZMN", "Beko", "4.7", "Standard",
+        Frigider f5 = new Frigider("Frigorifice", 2209.99f, true, "RDNE505E30DZMN", "Beko", "4.7", "Standard",
                 "Touchscreen", "E");
         Frigider f6 = new Frigider("Frigorifice", 1679.99f, true, "RDNT401I30WBN", "Beko", "4.7", "Incorporabil",
                 "Touchcreen", "F");
         Frigider f7 = new Frigider("Frigorifice", 5099.99f, true, "K 28202SD", "Miele", "3.1", "Standard",
                 "Touchscreen", "F");
-        Frigider f8 = new Frigider("Frigorifice", 1828.99f, true, "FBM260L", "CHiQ", "4.6", "Incorporabil",
+        Frigider f8 = new Frigider("Frigorifice", 1828.99f, false, "FBM260L", "CHiQ", "4.6", "Incorporabil",
                 "Fara", "F");
         Frigider f9 = new Frigider("Frigorifice", 1091.99f, true, "AK54305M30MT", "Arctic", "4.8", "Standard",
                 "Fara", "F");
         Frigider f10 = new Frigider("Frigorifice", 1449.99f, true, "AK60366M40NF", "Arctic", "4.7", "Standard",
                 "Fara", "F");
-        Frigider f11 = new Frigider("Frigorifice", 2089.99f, true, "RN-308RDQM", "Daewoo", "4.63", "Standard",
+        Frigider f11 = new Frigider("Frigorifice", 2089.99f, true, "RN_308RDQM", "Daewoo", "4.63", "Standard",
                 "vise", "H");
         Frigider f12 = new Frigider("Frigorifice", 3899.99f, true, "KFN 28132 ws", "Miele", "4.63",
                 "Incorporabil", "Touchscreen", "F");
@@ -90,6 +90,5 @@ public class Info {
         return F;
 
     }
-    
     
 }
