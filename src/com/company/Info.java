@@ -192,16 +192,16 @@ public class Info {
                                 "Spalare la 30grade, Spalare la 800 rpm");
 
                 Vector<MasinaSpalatRufe> mRufe = new Vector<>(10);
-                mRufe.add(1, r1);
-                mRufe.add(2, r2);
-                mRufe.add(3, r3);
-                mRufe.add(4, r4);
-                mRufe.add(5, r5);
-                mRufe.add(6, r6);
-                mRufe.add(7, r7);
-                mRufe.add(8, r8);
-                mRufe.add(9, r9);
-                mRufe.add(10, r10);
+                mRufe.add(0, r1);
+                mRufe.add(1, r2);
+                mRufe.add(2, r3);
+                mRufe.add(3, r4);
+                mRufe.add(4, r5);
+                mRufe.add(5, r6);
+                mRufe.add(6, r7);
+                mRufe.add(7, r8);
+                mRufe.add(8, r9);
+                mRufe.add(9, r10);
 
                 return mRufe;
         }
@@ -237,16 +237,16 @@ public class Info {
                                 "Spalare rapida, Spalare  cu temperatura scazuta");
 
                 Vector<MasinaSpalatVase> mVase = new Vector<>(10);
-                mVase.add(1, v1);
-                mVase.add(2, v2);
-                mVase.add(3, v3);
-                mVase.add(4, v4);
-                mVase.add(5, v5);
-                mVase.add(6, v6);
-                mVase.add(7, v7);
-                mVase.add(8, v8);
-                mVase.add(9, v9);
-                mVase.add(10, v10);
+                mVase.add(0, v1);
+                mVase.add(1, v2);
+                mVase.add(2, v3);
+                mVase.add(3, v4);
+                mVase.add(4, v5);
+                mVase.add(5, v6);
+                mVase.add(6, v7);
+                mVase.add(7, v8);
+                mVase.add(8, v9);
+                mVase.add(9, v10);
 
                 return mVase;
         }

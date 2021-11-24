@@ -192,11 +192,12 @@ public class GUI extends JFrame implements ActionListener {
         cmbuton.setIcon(imgCMicrounde);
         cmbuton.setOpaque(false);
         cmbuton.addActionListener(this);
-        panel.add(cebuton);
+        panel.add(cmbuton);
         labcmicrounde = new JLabel();
         labcmicrounde.setText("Cuptoare Cu Microunde");
         labcmicrounde.setBounds(750, 520, 120, 120);
         panel.add(labcmicrounde);
+        
         // ############################ frame ###################################
 
         this.setTitle("Electrocasnice");
@@ -421,8 +422,7 @@ public class GUI extends JFrame implements ActionListener {
             label.setText("<html>  Brand: " + mv.get(i).getBrand() + "<html> <br/> Model: " + mv.get(i).getModel()
                     + "<html> <br/> Pret: " + mv.get(i).getPret());
             // label.setBorder(border);
-            ImageIcon meniuu = new ImageIcon(
-                    "proiectpoofacultate2022\\src\\com\\company\\imagini\\masini_de_spalat_rufe\\" + mv.get(i).getModel() + ".png");
+            ImageIcon meniuu = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\masini_de_spalat_vase\\" + mv.get(i).getModel() + ".png");
             Image imeniu = meniuu.getImage();
             Image newmeniu = imeniu.getScaledInstance(150, 160, Image.SCALE_SMOOTH);
             meniuu = new ImageIcon(newmeniu);
