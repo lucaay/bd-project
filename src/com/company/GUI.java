@@ -355,6 +355,18 @@ public class GUI extends JFrame implements ActionListener {
         panel.removeAll();
         panel.add(meniu);
         panel.repaint();
+
+        JLabel label = new JLabel();
+        label.setText("<html>  Brand: <html> <br/> Model: <html> <br/> Pret:");
+        ImageIcon poza = new ImageIcon("proiectpoofacultate2022/src/com/company/imagini/espressor/Essenza Mini Ruby.jpg");
+        Image newpoza = poza.getImage();
+        Image ipoza = newpoza.getScaledInstance(90, 150, Image.SCALE_SMOOTH);
+        poza = new ImageIcon(ipoza);
+        label.setIcon(poza);
+        label.setBounds(100, 200, 150, 300);
+        label.setFont(new Font("MV Boli", Font.PLAIN, 9));
+        panel.add(label);
+
     }
     
 
