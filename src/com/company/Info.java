@@ -94,7 +94,7 @@ public class Info {
         public Vector<Espressor> vectorEspressor() {
                 Espressor es1 = new Espressor("Espressor", 299.90f, true, "Essenza Mini Ruby", "De Longhi",
                                 "4.83 stele", "Rosu", 1260f, "Capsule");
-                Espressor es2 = new Espressor("Espressor", 2559.90f, true, "Seria 4300 EP4349/70", "Philips",
+                Espressor es2 = new Espressor("Espressor", 2559.90f, true, "Seria 4300 EP434970", "Philips",
                                 "4.95 stele", "Negru", 1500f, "Boabe");
                 Espressor es3 = new Espressor("Espressor", 197.99f, true, "Tassimo Vivy II TAS1404", "Bosch",
                                 "3.70 stele", "Alb", 1300f, "Capsule");
@@ -106,11 +106,11 @@ public class Info {
                                 "Negru", 1450f, "Macinata/Boabe");
                 Espressor es7 = new Espressor("Espressor", 389.90f, true, "Essenza Mini", "Krups", "4.94 stele",
                                 "Negru", 1300, "Capsule");
-                Espressor es8 = new Espressor("Espressor", 405.93f, true, "Genio S Touch ", "Krups", "5 stele",
+                Espressor es8 = new Espressor("Espressor", 405.93f, true, "Genio S Touch", "Krups", "5 stele",
                                 "Argintiu", 1500, "Capsule");
                 Espressor es9 = new Espressor("Espressor", 1649.90f, true, "Intuition", "Krups", "4.70 stele", "Negru",
                                 1450, "Negru");
-                Espressor es10 = new Espressor("Espressor", 1599.90f, false, "ECAM 22.110 ", "DeLonghi", "4.64 stele",
+                Espressor es10 = new Espressor("Espressor", 1599.90f, false, "ECAM 22110", "DeLonghi", "4.64 stele",
                                 "Argintiu", 1450f, "Macinata/Boabe");
 
                 Vector<Espressor> es = new Vector<>(10);
