@@ -378,7 +378,7 @@ public class Main {
                  }
                  for (int i = 0; i < ce.capacity(); i++)
                  {
-                      if(ce.get(i).getPret()<400.00f && ce.get(i).getModel()=="Star-Light")
+                      if(ce.get(i).getPret()<400.00f && ce.get(i).getBrand()=="Star-Light")
                        System.out.println(ce.get(i) + "\n");
                  }
                 }
