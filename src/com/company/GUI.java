@@ -340,7 +340,7 @@ public class GUI extends JFrame implements ActionListener {
 
         JLabel label = new JLabel();
         label.setText("<html>  Brand: <html> <br/> Model: <html> <br/> Pret:");
-        ImageIcon poza = new ImageIcon("proiectpoofacultate2022/src/com/company/imagini/cafetiere/CFM4350B.jpg");
+        ImageIcon poza = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\cafetiere\\CFM4350B.jpg");
         Image newpoza = poza.getImage();
         Image ipoza = newpoza.getScaledInstance(90, 150, Image.SCALE_SMOOTH);
         poza = new ImageIcon(ipoza);
@@ -363,8 +363,8 @@ public class GUI extends JFrame implements ActionListener {
         panel.add(meniu);
         panel.repaint();
         Info info = new Info();
-        Vector<MasinaSpalatRufe> mr = new Vector<MasinaSpalatRufe>();
-        mr = info.vectorMasinaSpalatRufe();
+        Vector<MasinaSpalatRufe> mr = info.vectorMasinaSpalatRufe();
+       
         // Border border= BorderFactory.createLineBorder(Color.green,3);
         int x = 5, y = 20, c = 0;
         for (int i = 0; i < mr.capacity(); i++) {
@@ -373,8 +373,7 @@ public class GUI extends JFrame implements ActionListener {
             label.setText("<html>  Brand: " + mr.get(i).getBrand() + "<html> <br/> Model: " + mr.get(i).getModel()
                     + "<html> <br/> Pret: " + mr.get(i).getPret());
             // label.setBorder(border);
-            ImageIcon meniuu = new ImageIcon(
-                    "./src/com/company/imagini/masini_de_spalat_rufe/" + mr.get(i).getModel() + ".png");
+            ImageIcon meniuu = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\masini_de_spalat_rufe\\" + mr.get(i).getModel() + ".png");
             Image imeniu = meniuu.getImage();
             Image newmeniu = imeniu.getScaledInstance(150, 160, Image.SCALE_SMOOTH);
             meniuu = new ImageIcon(newmeniu);
@@ -423,7 +422,7 @@ public class GUI extends JFrame implements ActionListener {
                     + "<html> <br/> Pret: " + mv.get(i).getPret());
             // label.setBorder(border);
             ImageIcon meniuu = new ImageIcon(
-                    "./src/com/company/imagini/masini_de_spalat_vase/" + mv.get(i).getModel() + ".png");
+                    "proiectpoofacultate2022\\src\\com\\company\\imagini\\masini_de_spalat_rufe\\" + mv.get(i).getModel() + ".png");
             Image imeniu = meniuu.getImage();
             Image newmeniu = imeniu.getScaledInstance(150, 160, Image.SCALE_SMOOTH);
             meniuu = new ImageIcon(newmeniu);
