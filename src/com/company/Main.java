@@ -190,6 +190,7 @@ public class Main {
                 functii.add("f1");
                 functii.add("f2");
                 functii.add("f3");
+                
 
                 // Cafetiera cu Filtru si Espressor testare.
                 CafetieraFiltru c = new CafetieraFiltru("Cafetiera cu Filtru", 709.90f, true, "Grind&Brew HD7769",
@@ -316,8 +317,12 @@ public class Main {
                 for (int i = 0; i < 10; i++) {
                         System.out.println(vV[i] + "\n");
                 }
-
+ //#######################################################################
                 // teastare + vector Antonie 6+7 cred
+                //#######################################################################
+ //#######################################################################
+
+
 
                 Frigider f1 = new Frigider();
                 Frigider f2 = new Frigider("Frigorifice", 1091.99f, true, "AK54305M30MT", "Arctic", "4.8 stele",
@@ -337,11 +342,20 @@ public class Main {
                 for (int i = 0; i < lf.capacity(); i++)
                         System.out.println(lf.get(i) + "\n" + "\n" + "\n");
 
+                //sortare lada frigorifica dupa disponibilitate
+                
+                for (int i = 0; i < lf.capacity(); i++)
+                        if(lf.get(i).getDisponibilitate()==false)
+                                System.out.println(lf.get(i)+"\n");
+
+
+
                 for (int i = 0; i < f.capacity(); i++) {
                         if (f.get(i).getBrand() == "Arctic")
 
                                 System.out.println(f.get(i));
                 }
+                //sort by rating
                 float s;
                 System.out.println("\n" + "\n" + "\n" + "\n" + "\n" + "\n");
                 System.out.println("Sort by rating>4");
@@ -351,7 +365,22 @@ public class Main {
                                 System.out.println(f.get(i));
                 }
 
+                //sort by price
+                System.out.println("\n" + "\n" + "\n" + "\n" + "\n" + "\n");
+                System.out.println("Sort by pret > 1300 lei");
+                for (int i = 0; i < f.capacity(); i++) {
+                        if (f.get(i).getPret() >= 1300.0f)
+                                System.out.println(f.get(i));
+                }
+
                 // gata cu ale lui Antonie cam ez
+ //#######################################################################
+
+
+
+
+
+
 
                 // Cuptoare Microunde si Cuptoare Electrice testare
                 CuptoareMicrounde d = new CuptoareMicrounde("Cuptoare cu Microunde", 256.99f, true, "KOR-6S20W",
@@ -385,5 +414,9 @@ public class Main {
 
                 public static void main(String[] args) {
                         GUI gui = new GUI(); // nu STERGETI ASTA. ASTA ESTE INTERFATA
-                 }
+                         //sort by price
+                        Info info=new Info();
+                }
+
+        
 }
