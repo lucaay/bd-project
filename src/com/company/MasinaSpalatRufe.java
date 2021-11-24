@@ -58,4 +58,19 @@ public class MasinaSpalatRufe extends Electrocasnice {
                 + functii;
     }
 
+    public String getClasaEnergetica() {
+        return clasa_energetica;
+    }
+
+    public void setClasaEnergetica(String clasa_energetica) {
+        this.clasa_energetica = clasa_energetica;
+    }
+
+    public String getTipDisplay() {
+        return tip_display;
+    }
+
+    public void setTipDisplay(String tip_display) {
+        this.tip_display = tip_display;
+    }
 }
