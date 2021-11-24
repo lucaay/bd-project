@@ -371,9 +371,19 @@ public class Main {
                 for (int i = 0; i < ce.capacity(); i++)
                         System.out.println(ce.get(i) + "\n" + "\n" + "\n");
 
-        }
+                 for (int i = 0; i < cm.capacity(); i++)
+                 {
+                      if(cm.get(i).getDisponibilitate()== true && cm.get(i).getPret()<319.99f)
+                       System.out.println(cm.get(i) + "\n");
+                 }
+                 for (int i = 0; i < ce.capacity(); i++)
+                 {
+                      if(ce.get(i).getPret()<400.00f && ce.get(i).getModel()=="Star-Light")
+                       System.out.println(ce.get(i) + "\n");
+                 }
+                }
 
-        public static void main(String[] args) {
-                GUI gui = new GUI(); // nu STERGETI ASTA. ASTA ESTE INTERFATA
-        }
+                public static void main(String[] args) {
+                        GUI gui = new GUI(); // nu STERGETI ASTA. ASTA ESTE INTERFATA
+                 }
 }

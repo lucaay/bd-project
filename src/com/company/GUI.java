@@ -17,6 +17,8 @@ public class GUI extends JFrame implements ActionListener {
     JButton ebuton;
     JButton mrButton;
     JButton mvButton;
+    JButton cebuton;
+    JButton cmbuton;
     JButton meniu;
     JLabel labcaf;
     JLabel labesp;
@@ -24,6 +26,8 @@ public class GUI extends JFrame implements ActionListener {
     JLabel labmv;
     JLabel labFrigider;
     JLabel labLadaFrigorifica;
+    JLabel labcelectric;
+    JLabel labcmicrounde;
 
     public GUI() {
 
@@ -72,6 +76,17 @@ public class GUI extends JFrame implements ActionListener {
         Image newruse = masina_rufe.getImage();
         Image inewrufe = newruse.getScaledInstance(150, 150, Image.SCALE_SMOOTH);
         masina_rufe = new ImageIcon(inewrufe);
+        // imagine cuptoare electrice
+        ImageIcon imgCElectrice = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\CuptorElectric.png");
+        Image celectric = imgCElectrice.getImage();
+        Image newcelectrice = celectric.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
+        imgCElectrice = new ImageIcon(newcelectrice);
+ 
+        // imagine cuptoare cu microunde
+        ImageIcon imgCMicrounde = new ImageIcon("proiectpoofacultate2022\\src\\com\\company\\imagini\\CuptoarMicrounde.png");
+        Image cmicrounde = imgCMicrounde.getImage();
+        Image newcmicrounde = cmicrounde.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
+        imgCMicrounde = new ImageIcon(newcmicrounde);
 
         // ####################buton frigidere##################################
         fbuton = new JButton();
@@ -157,6 +172,31 @@ public class GUI extends JFrame implements ActionListener {
         labmv.setBounds(550, 270, 130, 120);
         panel.add(labmv);
 
+        // ####################buton cuptoare electrice##################################
+        cebuton = new JButton();
+        cebuton.setBounds(750, 200, 120, 120);
+        cebuton.setBackground(new Color(0Xcc99ff));
+        cebuton.setIcon(imgCElectrice);
+        cebuton.setOpaque(false);
+        cebuton.addActionListener(this);
+        panel.add(cebuton);
+        labcelectric = new JLabel();
+        labcelectric.setText("Cuptoare Electrice");
+        labcelectric.setBounds(750, 270, 120, 120);
+        panel.add(labcelectric);
+       
+        // ####################buton cuptoare electrice##################################
+        cmbuton = new JButton();
+        cmbuton.setBounds(750, 450, 120, 120);
+        cmbuton.setBackground(new Color(0Xcc99ff));
+        cmbuton.setIcon(imgCMicrounde);
+        cmbuton.setOpaque(false);
+        cmbuton.addActionListener(this);
+        panel.add(cebuton);
+        labcmicrounde = new JLabel();
+        labcmicrounde.setText("Cuptoare Cu Microunde");
+        labcmicrounde.setBounds(750, 520, 120, 120);
+        panel.add(labcmicrounde);
         // ############################ frame ###################################
 
         this.setTitle("Electrocasnice");
@@ -204,6 +244,14 @@ public class GUI extends JFrame implements ActionListener {
         if (e.getSource() == meniu) {
             Meniu();
         }
+        
+      /*  if (e.getSource() == cebuton) {
+            meniuCuptoareElectrice();
+        }
+        
+        if (e.getSource() == meniu) {
+            meniuCuptoareMicrounde();
+        }*/
     }
 
     public void meniuFrigider() {
@@ -308,7 +356,7 @@ public class GUI extends JFrame implements ActionListener {
         panel.add(meniu);
         panel.repaint();
     }
-
+    
 
     public void meniuMasinaSpalatRufe() {
         panel.removeAll();
@@ -348,7 +396,17 @@ public class GUI extends JFrame implements ActionListener {
         }
 
     }
-
+    /*public void meniuCuptoareElectrice(){
+            panel.removeAll();
+            panel.add(meniu);
+            panel.repaint();
+            
+        }
+    public void meniuCuptoareMicrounde(){
+            panel.removeAll();
+            panel.add(meniu);
+            panel.repaint();
+        }*/
     public void meniuMasinaSpalatVase() {
         panel.removeAll();
         panel.add(meniu);
@@ -385,8 +443,9 @@ public class GUI extends JFrame implements ActionListener {
             }
             panel.add(label);
         }
-
     }
+    
+    
 
     public void Meniu() {
         panel.removeAll();
@@ -397,11 +456,15 @@ public class GUI extends JFrame implements ActionListener {
         panel.add(ebuton);
         panel.add(mrButton);
         panel.add(mvButton);
+        panel.add(cebuton);
+        panel.add(cmbuton);
         panel.add(labcaf);
         panel.add(labesp);
         panel.add(labmr);
         panel.add(labmv);
+        panel.add(labcelectric);
+        panel.add(labcmicrounde);
         panel.add(meniu);
-
+        
     }
 }

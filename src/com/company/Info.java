@@ -251,4 +251,96 @@ public class Info {
                 return mVase;
         }
 
+
+        public static Vector<CuptoareElectrice> vectorCuptoareElectrice() {
+                CuptoareElectrice ce1 = new CuptoareElectrice("Cuptoare Electrice", 599.99f, true, "CEA-4520DBL",
+                                "Star-Light", "5", "Prajire, Grilling, Convectie, Coacere", "Negru",
+                                "Oprire automata, Iluminare, Timer, Termostat, Semnal acustic, Indicator luminos, Dezghetare",
+                                2000, 230);
+                CuptoareElectrice ce2 = new CuptoareElectrice("Cuptoare Electrice", 235.03f, true, "Floria-2898",
+                                "Floria", "4.3", "Prajire, Coacere, Patiserie, Rumenire", "Negru",
+                                "Termostat, Indicator luminos", 1500, 320);
+                CuptoareElectrice ce3 = new CuptoareElectrice("Cuptoare Electrice", 333.20f, true, "ZLN-3130", "ZILAN",
+                                "4.3", "Sotare, Coacere, Gratinat, Patiserie, Rumenire", "Gri",
+                                "Oprire automata, Termostat, Semnal acustic", 1300, 300);
+                CuptoareElectrice ce4 = new CuptoareElectrice("Cuptoare Electrice", 399.99f, true, "CEA-3016CBL",
+                                "Star-Light", "4,8", "Prajire, Grilling, Convectie, Coacere", "Negru",
+                                "Oprire automata, Iluminare, Timer, Termostat, Semnal acustic, Indicator luminos", 1600,
+                                230);
+                CuptoareElectrice ce5 = new CuptoareElectrice("Cuptoare Electrice", 234.99f, false, "A28B2", "Albatros",
+                                "4.8", "Prajire, Frigere, Coacere", "Negru", "Semnal acustic", 1500, 230);
+                CuptoareElectrice ce6 = new CuptoareElectrice("Cuptoare Electrice", 449.00f, true,
+                                "Express Air Fry 26095-56", "Russell Hobbs", "5", "Prajire, Convectie, Coacere",
+                                "Argintiu", "Timer, Mentinere la cald", 1500, 220);
+                CuptoareElectrice ce7 = new CuptoareElectrice("Cuptoare Electrice", 338.00f, true, "CS45B2", "Samus",
+                                "4.6", "Coacere", "Negru", "Semnal acustic", 2000, 230);
+                CuptoareElectrice ce8 = new CuptoareElectrice("Cuptoare Electrice", 159.90f, true, "MN-1009", "MUHLER",
+                                "0", "Frigere", "Negru", "Timer", 650, 230);
+                CuptoareElectrice ce9 = new CuptoareElectrice("Cuptoare Electrice", 249.00f, true, "HarlemÂ® Rustic",
+                                "Harlem", "3.8", "Prajire, Coacere, Patiserie", "Visiniu", "Termostat", 1300, 320);
+                CuptoareElectrice ce10 = new CuptoareElectrice("Cuptoare Electrice", 849.01f, true, "42814",
+                                "Gastroback", "5", "Grilling, Convectie, Coacere", "Negru/Inox",
+                                "Oprire automata, Iluminare, Timer, Termostat", 1500, 230);
+
+                Vector<CuptoareElectrice> CE = new Vector<CuptoareElectrice>(10);
+                CE.add(0, ce1);
+                CE.add(1, ce2);
+                CE.add(2, ce3);
+                CE.add(3, ce4);
+                CE.add(4, ce5);
+                CE.add(5, ce6);
+                CE.add(6, ce7);
+                CE.add(7, ce8);
+                CE.add(8, ce9);
+                CE.add(9, ce10);
+
+                return CE;
+        }
+
+        public static Vector<CuptoareMicrounde> vectorCuptoareMicrounde() {
+                CuptoareMicrounde cm1 = new CuptoareMicrounde("Cuptoare cu Microunde", 256.99f, true, "KOR-6S20W",
+                                "Daewoo", "4.5", "Standard", "Mecanic", "Microunde", "Alb",
+                                "Timer, Pornire intarziata, Interior neaderent");
+                CuptoareMicrounde cm2 = new CuptoareMicrounde("Cuptoare cu Microunde", 229.99f, true, "AMG17M70VH",
+                                "Hansa", "4.5", "Standard", "Mecanic", "Microunde", "Alb",
+                                "Timer, Blocare acces copii, Semnal sonor la finalizarea programului");
+                CuptoareMicrounde cm3 = new CuptoareMicrounde("Cuptoare cu Microunde", 306.99f, true, "MS23K3515AK/OL",
+                                "Samsung", "4.6", "Standard", "Digital", "Microunde", "Negru",
+                                "Timer, Blocare acces copii, Semnal sonor la finalizarea programului, Elimina mirosuri neplacute, Afisare ceas, Mod Eco, Auto cook");
+                CuptoareMicrounde cm4 = new CuptoareMicrounde("Cuptoare cu Microunde", 309.00f, true, "20MWS-706M/B",
+                                "BBK", "0", "Standard", "Digital", "Microunde", "Negru",
+                                "Timer, Semnal sonor la finalizarea programului");
+                CuptoareMicrounde cm5 = new CuptoareMicrounde("Cuptoare cu Microunde", 319.99f, true, "HMW-20GRD",
+                                "HEINNER", "4.7", "Standard", "Digital", "Microunde, Grill", "Rosu",
+                                "Timer, Blocare acces copii, Semnal sonor la finalizarea programului");
+                CuptoareMicrounde cm6 = new CuptoareMicrounde("Cuptoare cu Microunde", 329.99f, true, "ZFM20100SA",
+                                "Zanussi", "4.8", "Standard", "Mecanic", "Microunde", "Argintiu",
+                                "Timer, Iluminare interioara, Semnal sonor la finalizarea programului");
+                CuptoareMicrounde cm7 = new CuptoareMicrounde("Cuptoare cu Microunde", 349.99f, false, "KOR-669RC",
+                                "Daewoo", "4.8", "Standard", "Digital", "Microunde", "Crem",
+                                "Oprire automata, Timer, Blocare acces copii, Semnal sonor la finalizarea programului, Mod Eco, Auto cook");
+                CuptoareMicrounde cm8 = new CuptoareMicrounde("Cuptoare cu Microunde", 354.99f, true, "MM2005/RD",
+                                "Oursson", "5", "Standard", "Mecanic", "Microunde", "Rosu",
+                                "Timer, Functie de decongelare");
+                CuptoareMicrounde cm9 = new CuptoareMicrounde("Cuptoare cu Microunde", 375.90f, true, "FMO-2073BS",
+                                "Finlux", "4.5", "Standard", "Mecanic", "Microunde", "Negru/Argintiu",
+                                "Iluminare interioara");
+                CuptoareMicrounde cm10 = new CuptoareMicrounde("Cuptoare cu Microunde", 379.99f, true, "MO20E1S",
+                                "Gorenje", "4.8", "Standard", "Digital", "Microunde", "Argintiu",
+                                "Semnal sonor la finalizarea programului, Functia AquaClean");
+
+                Vector<CuptoareMicrounde> CM = new Vector<CuptoareMicrounde>(10);
+                CM.add(0, cm1);
+                CM.add(1, cm2);
+                CM.add(2, cm3);
+                CM.add(3, cm4);
+                CM.add(4, cm5);
+                CM.add(5, cm6);
+                CM.add(6, cm7);
+                CM.add(7, cm8);
+                CM.add(8, cm9);
+                CM.add(9, cm10);
+
+                return CM;
+        }
 }
