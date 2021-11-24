@@ -184,13 +184,11 @@ public class Main {
 
         }
 
-
         public void Test() {
                 List<String> functii = new ArrayList<>();
                 functii.add("f1");
                 functii.add("f2");
                 functii.add("f3");
-                
 
                 // Cafetiera cu Filtru si Espressor testare.
                 CafetieraFiltru c = new CafetieraFiltru("Cafetiera cu Filtru", 709.90f, true, "Grind&Brew HD7769",
@@ -213,41 +211,59 @@ public class Main {
                                 "Argintiu", 1500, "Capsule");
                 System.out.println(e3 + "\n");
 
+                CafetieraFiltru cf1 = new CafetieraFiltru("Cafetiera", 174.99f, true, "HD7459", "PHILIPS ", "5.0 stele",
+                                "Negru", "Macinata");
+                CafetieraFiltru cf2 = new CafetieraFiltru("Cafetiera", 89.90f, true, "CFM4350B", "BEKO", "4.8 stele",
+                                "Negru", "Macinata");
+                CafetieraFiltru cf3 = new CafetieraFiltru("Cafetiera", 172.90f, true, "Subito Mug", "TEFAL ",
+                                "4.9 stele", "Negru", "Macinata");
+                CafetieraFiltru cf4 = new CafetieraFiltru("Cafetiera", 183.93f, true, "MY4442", "MYRIA ", "No Reviews",
+                                "Gri", "Macinata");
+                CafetieraFiltru cf5 = new CafetieraFiltru("Cafetiera", 293.34f, true, "MY4444", "MYRIA", "No Reviews",
+                                "Gri", "Boabe/Macinata");
+                CafetieraFiltru cf6 = new CafetieraFiltru("Cafetiera", 692.90f, true, "AromaFresh ", "MELITTA ",
+                                "4 stele", "Greu", "Boabe/Macinata");
+                CafetieraFiltru cf7 = new CafetieraFiltru("Cafetiera", 398.93f, true, "Delisia KM8680", "GRUNDIG ",
+                                "4 stele", "Argintiu", "Macinata");
+                CafetieraFiltru cf8 = new CafetieraFiltru("Cafetiera ", 319.93f, false, "BKK2300ALB", "BEKO",
+                                "4.8 stele", "Alb", "Macinata");
+                CafetieraFiltru cf9 = new CafetieraFiltru("Cafetiera", 189.90f, true, "Compact Home", "Russel Hobbs",
+                                "4.3 stele", "Argintiu", "Macinata");
+                CafetieraFiltru cf10 = new CafetieraFiltru("Cafetiera", 135.92f, true, "EKF3300", "Electrolux",
+                                "5 stele", "Negru", "Macinata");
 
-                CafetieraFiltru cf1 = new CafetieraFiltru("Cafetiera", 174.99f, true, "HD7459", "PHILIPS ", "5.0 stele", "Negru", "Macinata");
-                CafetieraFiltru cf2 = new CafetieraFiltru("Cafetiera", 89.90f, true, "CFM4350B", "BEKO", "4.8 stele", "Negru", "Macinata");
-                CafetieraFiltru cf3 = new CafetieraFiltru("Cafetiera", 172.90f, true, "Subito Mug", "TEFAL ", "4.9 stele", "Negru", "Macinata");
-                CafetieraFiltru cf4 = new CafetieraFiltru("Cafetiera", 183.93f, true, "MY4442", "MYRIA ", "No Reviews", "Gri", "Macinata");
-                CafetieraFiltru cf5 = new CafetieraFiltru("Cafetiera", 293.34f, true, "MY4444", "MYRIA", "No Reviews", "Gri", "Boabe/Macinata");
-                CafetieraFiltru cf6 = new CafetieraFiltru("Cafetiera", 692.90f, true, "AromaFresh ", "MELITTA ", "4 stele", "Greu", "Boabe/Macinata");
-                CafetieraFiltru cf7 = new CafetieraFiltru("Cafetiera", 398.93f, true, "Delisia KM8680", "GRUNDIG ", "4 stele", "Argintiu", "Macinata");
-                CafetieraFiltru cf8 = new CafetieraFiltru("Cafetiera ", 319.93f, false, "BKK2300ALB", "BEKO", "4.8 stele", "Alb", "Macinata");
-                CafetieraFiltru cf9 = new CafetieraFiltru("Cafetiera", 189.90f, true, "Compact Home", "Russel Hobbs", "4.3 stele", "Argintiu", "Macinata");
-                CafetieraFiltru cf10 = new CafetieraFiltru("Cafetiera", 135.92f, true, "EKF3300", "Electrolux", "5 stele", "Negru", "Macinata");
+                CafetieraFiltru[] vCaf = { cf1, cf2, cf3, cf4, cf5, cf6, cf7, cf8, cf9, cf10 };
+                for (int i = 0; i < 10; i++) {
+                        if (vCaf[i].getDisponibilitate() == true && vCaf[i].getCuloare() == "Negru")
+                                System.out.println(vCaf[i] + "\n");
+                }
 
-                  CafetieraFiltru[] vCaf = { cf1, cf2, cf3, cf4, cf5, cf6, cf7, cf8, cf9, cf10};
-                  for (int i = 0; i < 10; i++)
-                  {
-                          if(vCaf[i].getDisponibilitate()== true && vCaf[i].getCuloare()=="Negru")
-                          System.out.println(vCaf[i] + "\n");
-                  }
+                Espressor es1 = new Espressor("Espressor", 299.90f, true, "Essenza Mini Ruby", "De Longhi",
+                                "4.83 stele", "Rosu", 1260f, "Capsule");
+                Espressor es2 = new Espressor("Espressor", 2559.90f, true, "Seria 4300 EP4349/70", "Philips",
+                                "4.95 stele", "Negru", 1500f, "Boabe");
+                Espressor es3 = new Espressor("Espressor", 197.99f, true, "Tassimo Vivy II TAS1404", "Bosch",
+                                "3.70 stele", "Alb", 1300f, "Capsule");
+                Espressor es4 = new Espressor("Espressor", 239.99f, true, "NESCAFÉ Dolce Gusto", "Krups", "4.63 stele",
+                                "Rosu", 1500f, "Caspule");
+                Espressor es5 = new Espressor("Espressor", 2999.99f, true, "GranAroma SM6580", "Saeco ", "5 stele",
+                                "Gri", 1500f, "Macinata/Boabe");
+                Espressor es6 = new Espressor("Espressor", 1288.99f, true, "Picto Arabica", "Krups", "4.68 stele",
+                                "Negru", 1450f, "Macinata/Boabe");
+                Espressor es7 = new Espressor("Espressor", 389.90f, true, "Essenza Mini", "Krups", "4.94 stele",
+                                "Negru", 1300, "Capsule");
+                Espressor es8 = new Espressor("Espressor", 405.93f, true, "Genio S Touch ", "Krups", "5 stele",
+                                "Argintiu", 1500, "Capsule");
+                Espressor es9 = new Espressor("Espressor", 1649.90f, true, "Intuition", "Krups", "4.70 stele", "Negru",
+                                1450, "Negru");
+                Espressor es10 = new Espressor("Espressor", 1599.90f, false, "ECAM 22.110 ", "DeLonghi", "4.64 stele",
+                                "Argintiu", 1450f, "Macinata/Boabe");
 
-                  Espressor es1 = new Espressor("Espressor", 299.90f, true, "Essenza Mini Ruby", "De Longhi", "4.83 stele", "Rosu", 1260f, "Capsule");
-                  Espressor es2 = new Espressor("Espressor", 2559.90f, true, "Seria 4300 EP4349/70", "Philips", "4.95 stele", "Negru", 1500f, "Boabe");
-                  Espressor es3 = new Espressor("Espressor", 197.99f, true, "Tassimo Vivy II TAS1404", "Bosch", "3.70 stele", "Alb", 1300f, "Capsule");
-                  Espressor es4 = new Espressor("Espressor", 239.99f, true, "NESCAFÉ Dolce Gusto", "Krups", "4.63 stele", "Rosu", 1500f, "Caspule");
-                  Espressor es5 = new Espressor("Espressor", 2999.99f, true, "GranAroma SM6580", "Saeco ", "5 stele", "Gri", 1500f, "Macinata/Boabe");
-                  Espressor es6 = new Espressor("Espressor", 1288.99f, true, "Picto Arabica", "Krups", "4.68 stele", "Negru", 1450f, "Macinata/Boabe");
-                  Espressor es7 = new Espressor("Espressor", 389.90f, true, "Essenza Mini", "Krups", "4.94 stele", "Negru", 1300, "Capsule");
-                  Espressor es8 = new Espressor("Espressor", 405.93f, true, "Genio S Touch ", "Krups", "5 stele", "Argintiu", 1500, "Capsule");
-                  Espressor es9 = new Espressor("Espressor", 1649.90f, true, "Intuition", "Krups", "4.70 stele", "Negru", 1450, "Negru");
-                  Espressor es10 = new Espressor("Espressor", 1599.90f, false, "ECAM 22.110 ", "DeLonghi", "4.64 stele", "Argintiu", 1450f, "Macinata/Boabe");
-
-                  Espressor[] vEsp = { es1, es2, es3, es4, es5, es6, es7, es8, es9, es10 };
-                  for(int i = 0; i < 10; i++) {
-                        if(vEsp[i].getTipcafea()=="Boabe" || vEsp[i].getTipcafea()=="Macinata/Boabe")
-                        System.out.println(vEsp[i] + "\n");
-                  }
+                Espressor[] vEsp = { es1, es2, es3, es4, es5, es6, es7, es8, es9, es10 };
+                for (int i = 0; i < 10; i++) {
+                        if (vEsp[i].getTipcafea() == "Boabe" || vEsp[i].getTipcafea() == "Macinata/Boabe")
+                                System.out.println(vEsp[i] + "\n");
+                }
 
                 // Masina de Spalat rufe si Masina de spalat Vase testare.
                 MasinaSpalatRufe r1 = new MasinaSpalatRufe("Masini de spalat rufe", 5500.99f, true, "ghfs56", "Arctic",
@@ -279,11 +295,35 @@ public class Main {
                         System.out.println(vR[i] + "\n");
                 }
 
+                // afisarea tuturor masinilor de spalat rufe cu pretul mai mic de 6000 lei
                 for (int i = 0; i < vR.length; i++) {
-                        if (vR[i].getBrand().substring(0, 1) == "i") {
+                        if (vR[i].getPret() < 6000 && vR[i].getClasaEnergetica().equals("A+")) {
                                 System.out.println(vR[i] + "\n");
                         }
                 }
+
+                // afisarea tuturor masinilor de spalat rufe cu clasa a+
+                for (int i = 0; i < vR.length; i++) {
+                        if (vR[i].getClasaEnergetica().equals("A+")) {
+                                System.out.println(vR[i] + "\n");
+                        }
+                }
+
+                // AFISAREA TUturor masinilor de spalat rufe cu display LCD
+                for (int i = 0; i < vR.length; i++) {
+                        if (vR[i].getTipDisplay().equals("LCD")) {
+                                System.out.println(vR[i] + "\n");
+                        }
+                }
+
+                // afisarea tuturor masinilor de spalat rufe cu pretul mai mic de 5000 lei SI
+                // clasa energetica a+
+                for (int i = 0; i < vR.length; i++) {
+                        if (vR[i].getPret() < 5000 && vR[i].getClasaEnergetica().equals("A+")) {
+                                System.out.println(vR[i] + "\n");
+                        }
+                }
+
                 MasinaSpalatVase v1 = new MasinaSpalatVase("Masini de spalat vase", 5039.99f, true, "ajdh49871", "Acer",
                                 "3", "incorporat", "LCD", "A+", 4, "Spalare rapida, Spalare  cu temperatura scazuta");
                 MasinaSpalatVase v2 = new MasinaSpalatVase("Masini de spalat vase", 3853.99f, true, "ajdh49871",
@@ -317,12 +357,40 @@ public class Main {
                 for (int i = 0; i < 10; i++) {
                         System.out.println(vV[i] + "\n");
                 }
- //#######################################################################
+
+                // afisarea tuturor masinilor de spalat vase cu pretul mai mic de 5000 lei
+                for (int i = 0; i < vV.length; i++) {
+                        if (vV[i].getPret() < 5000) {
+                                System.out.println(vV[i] + "\n");
+                        }
+                }
+
+                // afisarea tuturor masinilor de spalat vase cu clasa a+
+                for (int i = 0; i < vV.length; i++) {
+                        if (vV[i].getClasaEnergetica().equals("A++")) {
+                                System.out.println(vV[i] + "\n");
+                        }
+                }
+
+                // afisarea tuturor masinilor de spalat vase cu DISPLAY LED
+                for (int i = 0; i < vV.length; i++) {
+                        if (vV[i].getTipDisplay().equals("LED")) {
+                                System.out.println(vV[i] + "\n");
+                        }
+                }
+
+                // afisarea tuturor masinilor de spalat vase cu pretul mai mic de 7000 lei SI
+                // clasa energetica a++
+                for (int i = 0; i < vV.length; i++) {
+                        if (vV[i].getPret() < 7000 && vV[i].getClasaEnergetica().equals("A++")) {
+                                System.out.println(vV[i] + "\n");
+                        }
+                }
+
+                // #######################################################################
                 // teastare + vector Antonie 6+7 cred
-                //#######################################################################
- //#######################################################################
-
-
+                // #######################################################################
+                // #######################################################################
 
                 Frigider f1 = new Frigider();
                 Frigider f2 = new Frigider("Frigorifice", 1091.99f, true, "AK54305M30MT", "Arctic", "4.8 stele",
@@ -342,20 +410,18 @@ public class Main {
                 for (int i = 0; i < lf.capacity(); i++)
                         System.out.println(lf.get(i) + "\n" + "\n" + "\n");
 
-                //sortare lada frigorifica dupa disponibilitate
-                
+                // sortare lada frigorifica dupa disponibilitate
+
                 for (int i = 0; i < lf.capacity(); i++)
-                        if(lf.get(i).getDisponibilitate()==false)
-                                System.out.println(lf.get(i)+"\n");
-
-
+                        if (lf.get(i).getDisponibilitate() == false)
+                                System.out.println(lf.get(i) + "\n");
 
                 for (int i = 0; i < f.capacity(); i++) {
                         if (f.get(i).getBrand() == "Arctic")
 
                                 System.out.println(f.get(i));
                 }
-                //sort by rating
+                // sort by rating
                 float s;
                 System.out.println("\n" + "\n" + "\n" + "\n" + "\n" + "\n");
                 System.out.println("Sort by rating>4");
@@ -365,7 +431,7 @@ public class Main {
                                 System.out.println(f.get(i));
                 }
 
-                //sort by price
+                // sort by price
                 System.out.println("\n" + "\n" + "\n" + "\n" + "\n" + "\n");
                 System.out.println("Sort by pret > 1300 lei");
                 for (int i = 0; i < f.capacity(); i++) {
@@ -374,13 +440,7 @@ public class Main {
                 }
 
                 // gata cu ale lui Antonie cam ez
- //#######################################################################
-
-
-
-
-
-
+                // #######################################################################
 
                 // Cuptoare Microunde si Cuptoare Electrice testare
                 CuptoareMicrounde d = new CuptoareMicrounde("Cuptoare cu Microunde", 256.99f, true, "KOR-6S20W",
@@ -400,23 +460,20 @@ public class Main {
                 for (int i = 0; i < ce.capacity(); i++)
                         System.out.println(ce.get(i) + "\n" + "\n" + "\n");
 
-                 for (int i = 0; i < cm.capacity(); i++)
-                 {
-                      if(cm.get(i).getDisponibilitate()== true && cm.get(i).getPret()<319.99f)
-                       System.out.println(cm.get(i) + "\n");
-                 }
-                 for (int i = 0; i < ce.capacity(); i++)
-                 {
-                      if(ce.get(i).getPret()<400.00f && ce.get(i).getBrand()=="Star-Light")
-                       System.out.println(ce.get(i) + "\n");
-                 }
+                for (int i = 0; i < cm.capacity(); i++) {
+                        if (cm.get(i).getDisponibilitate() == true && cm.get(i).getPret() < 319.99f)
+                                System.out.println(cm.get(i) + "\n");
                 }
-
-                public static void main(String[] args) {
-                        GUI gui = new GUI(); // nu STERGETI ASTA. ASTA ESTE INTERFATA
-                         //sort by price
-                        Info info=new Info();
+                for (int i = 0; i < ce.capacity(); i++) {
+                        if (ce.get(i).getPret() < 400.00f && ce.get(i).getBrand() == "Star-Light")
+                                System.out.println(ce.get(i) + "\n");
                 }
+        }
 
-        
+        public static void main(String[] args) {
+                GUI gui = new GUI(); // nu STERGETI ASTA. ASTA ESTE INTERFATA
+                // sort by price
+                Info info = new Info();
+        }
+
 }
